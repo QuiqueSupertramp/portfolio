@@ -42,7 +42,7 @@ const Contact = () => {
 	};
 
 	return (
-		<section className='contact' id='form'>
+		<div className='contact' id='form'>
 			<Title text='Say Hello!' number='4' />
 			<div className='contact__container'>
 				<form className='contact__form' onSubmit={onSubmit}>
@@ -92,7 +92,7 @@ const Contact = () => {
 					<img src={image} alt='' />
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

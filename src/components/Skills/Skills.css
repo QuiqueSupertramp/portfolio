@@ -1,5 +1,8 @@
 .skills {
 	position: relative;
+	opacity: 0;
+	transform: translateY(100px);
+	animation: show-section 2s forwards;
 }
 
 .skills__container {
@@ -36,6 +39,7 @@
 	font-size: 14px;
 	border-radius: 0 3px 3px 0;
 	transition: background 0.3s;
+	cursor: pointer;
 }
 
 .skills__menu button:hover {

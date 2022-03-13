@@ -1,6 +1,9 @@
 .about {
 	width: 75%;
 	margin: 0 auto;
+	opacity: 0;
+	transform: translateY(100px);
+	animation: show-section 2s forwards;
 }
 
 .photo {

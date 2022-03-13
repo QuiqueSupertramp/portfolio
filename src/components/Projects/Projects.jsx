@@ -11,7 +11,7 @@ import landingReactMobile from '../../images/projects/landing-mb.png';
 
 const Projects = () => {
 	return (
-		<section className='projects' id='projects'>
+		<div className='projects' id='projects'>
 			<Title text='Projects' number='3' />
 			<div className='projects__main'>
 				<div className='project'>
@@ -91,7 +91,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

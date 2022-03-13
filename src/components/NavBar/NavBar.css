@@ -21,8 +21,10 @@
 }
 
 .navBar__ul li:hover {
-	color: var(--secondary);
 	transform: scale(1.4);
+}
+.navBar__ul li a:hover {
+	color: var(--secondary);
 }
 
 .navBar__logo {

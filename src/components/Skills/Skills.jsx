@@ -7,6 +7,7 @@ import Backend from './views/Backend';
 import Frontend from './views/Frontend';
 import Scrum from './views/Scrum';
 import Tools from './views/Tools';
+// import useObserver from '../../hooks/useObserver';
 
 const Skills = () => {
 	const [view, setView] = useState('frontend');
@@ -15,8 +16,16 @@ const Skills = () => {
 		setView(e.target.dataset.view);
 	};
 
+	// const { ref, isIntersecting } = useObserver();
+
+	// useEffect(() => {
+	// 	if (ref.current) {
+	// 		isIntersecting === true && ref.current.classList.add('showSection');
+	// 	}
+	// }, [isIntersecting]);
+
 	return (
-		<section className='skills' id='skills'>
+		<div className='skills' id='skills'>
 			<Title text='Skills' number='2' />
 			<div className='skills__container'>
 				<SkillsMenu view={view} handleView={handleView} />
@@ -27,7 +36,7 @@ const Skills = () => {
 					{view === 'scrum' && <Scrum />}
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

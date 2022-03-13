@@ -1,5 +1,8 @@
 .contact {
-	margin-bottom: 10rem;
+	min-height: 100vh;
+	opacity: 0;
+	transform: translateY(100px);
+	animation: show-section 2s forwards;
 }
 
 .contact__container {

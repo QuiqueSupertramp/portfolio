@@ -4,7 +4,7 @@ import photo from '../../images/quique1.png';
 
 const About = () => {
 	return (
-		<section className='about' id='about'>
+		<div className='about' id='about'>
 			<Title text='About Me' number='1' />
 			<div className='about__main'>
 				<div className='photo'>
@@ -50,7 +50,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

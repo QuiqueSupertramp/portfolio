@@ -7,10 +7,6 @@ section {
 	padding-bottom: 5rem;
 }
 
-.show {
-	opacity: 1;
-}
-
 @media screen and (max-width: 1080px) {
 	main {
 		padding: 0 100px;
@@ -26,5 +22,10 @@ section {
 @media screen and (max-width: 480px) {
 	main {
 		padding: 0 25px;
+	}
+}
+
+@keyframes show {
+	50% {
 	}
 }
