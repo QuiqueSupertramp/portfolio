@@ -1,0 +1,1 @@
+import{j as s,a as r}from"./index.73641387.js";const l=({text:a,number:e})=>s("div",{className:"title",children:[s("span",{className:"orange",children:[e,"."]}),r("h2",{children:a})]});export{l as T};
