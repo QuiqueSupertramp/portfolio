@@ -11,7 +11,7 @@ import landingReactMobile from '../../images/projects/landing-mb.png';
 
 const Projects = () => {
 	return (
-		<div className='projects' id='projects'>
+		<div className='projects'>
 			<Title text='Projects' number='3' />
 			<div className='projects__main'>
 				<div className='project'>

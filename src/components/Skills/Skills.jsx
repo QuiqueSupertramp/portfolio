@@ -25,7 +25,7 @@ const Skills = () => {
 	// }, [isIntersecting]);
 
 	return (
-		<div className='skills' id='skills'>
+		<div className='skills'>
 			<Title text='Skills' number='2' />
 			<div className='skills__container'>
 				<SkillsMenu view={view} handleView={handleView} />

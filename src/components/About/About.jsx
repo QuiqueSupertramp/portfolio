@@ -4,7 +4,7 @@ import photo from '../../images/quique1.png';
 
 const About = () => {
 	return (
-		<div className='about' id='about'>
+		<div className='about'>
 			<Title text='About Me' number='1' />
 			<div className='about__main'>
 				<div className='photo'>

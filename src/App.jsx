@@ -25,28 +25,28 @@ function App() {
 			<NavBar />
 			<main>
 				<Header />
-				<section ref={aboutRef}>
+				<section ref={aboutRef} id='about'>
 					{isAboutIntersecting && (
 						<Suspense fallback={null}>
 							<About />
 						</Suspense>
 					)}
 				</section>
-				<section ref={skillsRef}>
+				<section ref={skillsRef} id='skills'>
 					{isSkillsIntersecting && (
 						<Suspense fallback={null}>
 							<Skills />
 						</Suspense>
 					)}
 				</section>
-				<section ref={projectsRef}>
+				<section ref={projectsRef} id='projects'>
 					{isProjectsIntersecting && (
 						<Suspense fallback={null}>
 							<Projects />
 						</Suspense>
 					)}
 				</section>
-				<section ref={contactRef}>
+				<section ref={contactRef} id='contact'>
 					{isContactIntersecting && (
 						<Suspense fallback={null}>
 							<Contact />

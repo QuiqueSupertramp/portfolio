@@ -42,7 +42,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='contact' id='form'>
+		<div className='contact'>
 			<Title text='Say Hello!' number='4' />
 			<div className='contact__container'>
 				<form className='contact__form' onSubmit={onSubmit}>
