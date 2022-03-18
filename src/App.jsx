@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import './App.css';
 import { Header } from './components/Header/Header';
-import { NavBar } from './components/NavBar/NavBar';
+// import { NavBar } from './components/NavBar/NavBar';
 import useObserver from './hooks/useObserver';
 
 // Al usar Lazy con conditional render, reducimos la carga incial de 5,2MB a 3,7MB
@@ -22,9 +22,9 @@ function App() {
 
 	return (
 		<div className='App'>
-			<NavBar />
+			{/* <NavBar /> */}
+			<Header />
 			<main>
-				<Header />
 				<section ref={aboutRef} id='about'>
 					{isAboutIntersecting && (
 						<Suspense fallback={null}>

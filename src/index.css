@@ -12,8 +12,8 @@
 	--montserrat: 'Montserrat', sans-serif;
 	--jetBrains: 'JetBrains Mono', monospace;
 
-	--navHeight: 5rem;
-	--headerHeight: calc(100vh - var(--navHeight));
+	--sidePadding: 150px;
+	--headerHeight: 100vh;
 }
 
 html {
@@ -55,5 +55,29 @@ a {
 	100% {
 		transform: translateY(0);
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1092px) {
+	:root {
+		--sidePadding: 100px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	:root {
+		--sidePadding: 75px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		--sidePadding: 50px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	:root {
+		--sidePadding: 25px;
 	}
 }

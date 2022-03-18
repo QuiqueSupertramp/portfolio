@@ -1,5 +1,5 @@
 .contact {
-	min-height: 100vh;
+	min-height: calc(100vh - 10rem);
 	opacity: 0;
 	transform: translateY(100px);
 	animation: show-section 2s forwards;

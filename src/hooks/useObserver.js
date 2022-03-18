@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-function useObserver(rootMargin = '0px 0px -100px 0px') {
+function useObserver(rootMargin = '0px 0px -150px 0px') {
 	const [isIntersecting, setIntersecting] = useState(false);
 	const ref = useRef();
 

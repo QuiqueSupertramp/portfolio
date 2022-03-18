@@ -5,7 +5,7 @@ export const NavBar = () => {
 	return (
 		<section className='navBar'>
 			<img src={logo} alt='' className='navBar__logo' />
-			<nav>
+			<nav className='navBar-desktop'>
 				<ul className='navBar__ul'>
 					<li>
 						<a href='#about'>About</a>

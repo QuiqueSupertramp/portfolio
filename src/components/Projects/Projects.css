@@ -20,7 +20,8 @@
 .project__images {
 	max-width: 800px;
 	margin-bottom: 20px;
-	opacity: 0.8;
+	opacity: 0.7;
+	transition: opacity 0.3s;
 }
 
 .project__images:hover {
