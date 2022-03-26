@@ -3,7 +3,7 @@ import './NavBar.css';
 
 export const NavBar = () => {
 	return (
-		<section className='navBar'>
+		<div className='navBar'>
 			<img src={logo} alt='' className='navBar__logo' />
 			<nav className='navBar-desktop'>
 				<ul className='navBar__ul'>
@@ -21,6 +21,6 @@ export const NavBar = () => {
 					</li>
 				</ul>
 			</nav>
-		</section>
+		</div>
 	);
 };

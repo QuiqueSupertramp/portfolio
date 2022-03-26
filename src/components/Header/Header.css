@@ -1,12 +1,12 @@
 .header {
 	min-height: var(--headerHeight);
 	max-width: 1100px;
-	/* margin: 0 auto; */
-	margin: 0 var(--sidePadding);
+	margin: 0 var(--sidePadding) 2rem;
+	position: relative;
 }
 
 .header__text {
-	height: 75vh;
+	height: 80vh;
 	min-height: 350px;
 	display: flex;
 	flex-direction: column;
@@ -41,16 +41,16 @@
 	font-size: clamp(1.7rem, 7vw, 4.5rem);
 	color: white;
 	line-height: 1.1;
-	padding-right: 0.2rem;
 	font-family: 'Heebo', sans-serif;
-	text-shadow: 2px 2px 10px #0008;
+	text-shadow: 2px 2px 10px #000b;
 }
 
 .header h2 {
 	font-size: clamp(1.5rem, 7vw, 4.5rem);
-	padding-left: 2rem;
+	padding-left: 1em;
 	line-height: 0.9;
 	font-family: 'Heebo', sans-serif;
+	text-shadow: 2px 2px 10px #000b;
 }
 
 .header__buttons {
@@ -61,29 +61,10 @@
 	margin-top: 3rem;
 }
 
-.header__button {
-	padding: 0.5rem 2.5rem;
-	border: 2px solid var(--tertiary);
-	border-radius: 5px;
-	font-family: var(--jetBrains);
-	font-size: 14px;
-	cursor: pointer;
-}
-
-.header__button--about {
-	background-color: var(--tertiary);
-	color: var(--primary);
-	font-weight: bold;
-}
-.header__button--resume {
-	background-color: transparent;
-	color: var(--tertiary);
-}
-
 .avatarMenu {
 	position: absolute;
 	bottom: 0;
-	right: var(--sidePadding);
+	right: calc(var(--sidePadding) * -1);
 	width: calc(12vw + 25vh);
 	height: calc(12vw + 25vh);
 	display: flex;
@@ -131,8 +112,9 @@
 }
 
 .social:hover {
-	width: 2vw;
-	height: 2vw;
+	width: 2.1vw;
+	height: 2.1vw;
+	filter: drop-shadow(2px 4px 6px #fff3);
 }
 
 .social img {
@@ -169,6 +151,10 @@
 	.header__buttons {
 		margin-top: 2rem;
 	}
+	.header__button {
+		font-size: 14px;
+		padding: 0.5em 2em;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -176,24 +162,26 @@
 		margin-top: 1rem;
 	}
 	.header__button {
-		padding: 0.5rem 2rem;
+		font-size: 14px;
+		padding: 0.5em 2em;
 	}
 }
 
 @media screen and (max-width: 391px) {
 	.header h2 {
-		padding-left: 1rem;
+		padding-left: 0.5em;
 	}
 	.header__button {
-		padding: 0.5rem 1.5rem;
+		font-size: 13px;
+		padding: 0.5em 1.5em;
 	}
 }
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
 	.avatarMenu {
 		right: 0;
 	}
-}
+} */
 
 @media screen and (orientation: portrait) {
 	.header__text {
@@ -211,6 +199,9 @@
 }
 
 @media screen and (orientation: portrait) and (max-width: 500px) {
+	.header {
+		overflow: hidden;
+	}
 	.header__text {
 		height: 60vh;
 	}
@@ -218,7 +209,7 @@
 	.avatarMenu {
 		height: 45vh;
 		width: 45vh;
-		right: calc(45vh * -0.075);
+		right: calc(var(--sidePadding) * -2);
 	}
 
 	.social {

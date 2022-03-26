@@ -1,8 +1,8 @@
 .contact {
-	min-height: calc(100vh - 10rem);
+	min-height: 100vh;
+	margin-bottom: 2rem;
 	opacity: 0;
-	transform: translateY(100px);
-	animation: show-section 2s forwards;
+	transform: translateY(5rem);
 }
 
 .contact__container {

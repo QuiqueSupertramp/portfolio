@@ -1,14 +1,13 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 function useObserver(rootMargin = '0px 0px -150px 0px') {
-	const [isIntersecting, setIntersecting] = useState(false);
 	const ref = useRef();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry], observer) => {
 				if (entry.isIntersecting) {
-					setIntersecting(true);
+					ref.current.classList.add('showOn');
 					observer.unobserve(ref.current);
 				}
 			},
@@ -23,7 +22,7 @@ function useObserver(rootMargin = '0px 0px -150px 0px') {
 			observer.unobserve(ref.current);
 		};
 	}, []);
-	return { ref, isIntersecting };
+	return { ref };
 }
 
 export default useObserver;

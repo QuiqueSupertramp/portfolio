@@ -4,6 +4,7 @@ import image from '../../images/contact.png';
 import useForm from '../../hooks/useForm';
 import sendEmail from '../../services/sendEmail';
 import { useState } from 'react';
+import useObserver from '../../hooks/useObserver';
 
 const validations = {
 	email: {
@@ -16,6 +17,7 @@ const validations = {
 const Contact = () => {
 	const email = useForm(validations.email.regularExp);
 	const comment = useForm();
+	const { ref: contactRef } = useObserver();
 
 	const [submitError, setSubmitError] = useState(null);
 
@@ -42,57 +44,63 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='contact'>
-			<Title text='Say Hello!' number='4' />
-			<div className='contact__container'>
-				<form className='contact__form' onSubmit={onSubmit}>
-					<div className='contact__email'>
-						<input
-							type='email'
+		<section id='contact'>
+			<div className='contact' ref={contactRef}>
+				<Title text='Say Hello!' number='5' />
+				<div className='contact__container'>
+					<form className='contact__form' onSubmit={onSubmit}>
+						<div className='contact__email'>
+							<input
+								type='email'
+								className={[
+									'contact__emailInput',
+									email.active ? 'active' : null,
+								].join(' ')}
+								placeholder='Email...'
+								value={email.value}
+								onChange={email.onChange}
+								onFocus={email.onFocus}
+								onBlur={email.onBlur}
+								required
+							/>
+							<div className='contact__emailError'>
+								{email.error && <p>* {validations.email.errorMessage}</p>}
+							</div>
+						</div>
+						<textarea
 							className={[
-								'contact__emailInput',
-								email.active ? 'active' : null,
+								'contact__comment',
+								comment.active ? 'active' : null,
 							].join(' ')}
-							placeholder='Email...'
-							value={email.value}
-							onChange={email.onChange}
-							onFocus={email.onFocus}
-							onBlur={email.onBlur}
-							required
-						/>
-						<div className='contact__emailError'>
-							{email.error && <p>* {validations.email.errorMessage}</p>}
-						</div>
-					</div>
-					<textarea
-						className={[
-							'contact__comment',
-							comment.active ? 'active' : null,
-						].join(' ')}
-						rows='6'
-						placeholder='Mensaje...'
-						value={comment.value}
-						onChange={comment.onChange}
-						onFocus={comment.onFocus}
-						onBlur={comment.onBlur}
-						required></textarea>
-					{submitError !== null && (
-						<div className='contact__error'>
-							<h4>
-								{submitError === false
-									? 'Mensaje enviado correctamente'
-									: 'No se ha podido enviar'}
-							</h4>
-						</div>
-					)}
+							rows='6'
+							placeholder='Mensaje...'
+							value={comment.value}
+							onChange={comment.onChange}
+							onFocus={comment.onFocus}
+							onBlur={comment.onBlur}
+							required></textarea>
+						{submitError !== null && (
+							<div className='contact__error'>
+								<h4>
+									{submitError === false
+										? 'Mensaje enviado correctamente'
+										: 'No se ha podido enviar'}
+								</h4>
+							</div>
+						)}
 
-					<input type='submit' className='contact__submitBtn' value='Enviar' />
-				</form>
-				<div className='contact__image'>
-					<img src={image} alt='' />
+						<input
+							type='submit'
+							className='contact__submitBtn'
+							value='Enviar'
+						/>
+					</form>
+					<div className='contact__image'>
+						<img src={image} alt='' />
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

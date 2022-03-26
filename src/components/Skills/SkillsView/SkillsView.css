@@ -1,0 +1,33 @@
+.skills__main {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	/* opacity: 0;
+	animation: fade-in 5s forwards; */
+}
+
+.skills__h3,
+.skills__p,
+.skills__img {
+	opacity: 0;
+	animation: fade-in 2s forwards;
+}
+
+.skills__h3 {
+	color: var(--secondary);
+	text-transform: capitalize;
+}
+
+.skills__logos {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 1rem;
+}
+
+.skills__img {
+	width: 15%;
+	max-width: 70px;
+	filter: drop-shadow(2px 4px 6px #000b);
+}

@@ -19,12 +19,10 @@ export const Header = () => {
 					<span className='orange'>{b}</span>
 				</h2>
 				<div className='header__buttons'>
-					<a href='#about' className='header__button header__button--about'>
+					<a href='#about' className='btn btn--filled'>
 						About Me
 					</a>
-					<button className='header__button header__button--resume'>
-						Resume
-					</button>
+					<button className='btn btn--ghost'>Resume</button>
 				</div>
 			</div>
 			<div className='avatarMenu'>

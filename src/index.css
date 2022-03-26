@@ -18,6 +18,7 @@
 
 html {
 	scroll-behavior: smooth;
+	font-size: 100%;
 }
 
 body {
@@ -26,8 +27,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 16px;
-	background-color: var(--primary);
+	background-color: #1c1c1c;
 	color: var(--tertiary);
+	background-image: url(./images/bg.png);
 }
 
 a {
@@ -36,6 +38,10 @@ a {
 }
 .orange {
 	color: var(--secondary);
+}
+
+.showOn {
+	animation: show-section 2s forwards;
 }
 
 @keyframes fade-in {
@@ -48,10 +54,6 @@ a {
 }
 
 @keyframes show-section {
-	0% {
-		opacity: 0;
-		transform: translateY(100px);
-	}
 	100% {
 		transform: translateY(0);
 		opacity: 1;

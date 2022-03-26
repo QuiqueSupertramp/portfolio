@@ -1,56 +1,48 @@
 import Title from '../Title/Title';
 import './About.css';
 import photo from '../../images/quique1.png';
+import useObserver from '../../hooks/useObserver';
 
 const About = () => {
+	const { ref: aboutRef } = useObserver();
 	return (
-		<div className='about'>
-			<Title text='About Me' number='1' />
-			<div className='about__main'>
-				<div className='photo'>
-					<img src={photo} alt='' />
-				</div>
-				<div className='about__text'>
-					<p>
-						Mi nombre es Enrique López, tengo 37 años y actualmente resido en
-						Barcelona. A los 18 años empecé Ingeniería Informática de Gestión en
-						la UPC, carrera que tuve que dejar en segundo al mudarme a Granada.
-						Durante 5 años estuve trabajando como comercial en el sector de las
-						telecomunicaciones.
-					</p>
-					<p>
-						Al volver a Barcelona estudié Administración y Dirección de
-						Empresas, pero acabando las prácticas me surgió la oportunidad de
-						dedicarme profesionalmente al baloncesto, además de como entrenador,
-						gestionando un club desde la dirección técnica y deportiva.
-					</p>
-					<p>
-						Hace un año decidí retomar mi relación con la informática. Después
-						de adquirir los conocimientos mínimos, el siguiente paso que
-						necesito para crecer es trabajar rodeado de programadores con
-						experiencia de los que aprender a diario.
-					</p>
-					<p>
-						Las skills que puedo aportar a cualquier equipo de trabajo gracias
-						al deporte y a mi experiencia como comercial y como director de un
-						club son las siguientes:
-					</p>
-					<div className='about__skills'>
-						<ul>
-							<li>Trabajo en equipo</li>
-							<li>Empatía</li>
-							<li>Liderazgo</li>
-							<li>Focus en encontrar soluciones</li>
-							<li>Autodidacta</li>
-							<li>Toma de decisiones</li>
-							<li>Trabajo bajo presión</li>
-							<li>Trabajo con metodologías</li>
-							<li>Conocimiento de los procesos de aprendizaje</li>
-						</ul>
+		<section id='about'>
+			<div ref={aboutRef} className='about'>
+				<Title text='About Me' number='1' />
+				<div className='about__main'>
+					<div className='about__sidebar'>
+						<div className='photo'>
+							<img src={photo} alt='foto portfolio' />
+						</div>
+					</div>
+					<div className='about__text'>
+						<h3>Bienvenido!</h3>
+						<p>
+							Mi nombre es Quique, tengo 37 años y soy de Barcelona. Hace un año
+							que empecé a estudiar programación y he descubierto que tiene
+							mucho que ver con el mundo del que vengo.
+							<br />
+							<br />
+							Soy entrenador de baloncesto y los últimos 6 años he estado
+							dirigiendo un club de casi 200 familias, lo que me ha permitido
+							desarrolllar habilidades personales, metodologicas y de gestión
+							muy valiosas para cualquier trabajo en equipo.
+							<br />
+							<br />
+							Ahora busco mi primera oportunidad laboral en el mundo del
+							desarrollo web. Llevo un año preparándome de forma autodidacta y
+							el siguiente paso que necesito es convivir y trabajar a diario con
+							profesionales.
+							<br />
+							<br />
+						</p>
+						<a className='btn btn--filled' href='#softSkills'>
+							Soft Skills
+						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
