@@ -16,8 +16,8 @@
 }
 
 .photo img {
-	width: 250px;
-	height: 250px;
+	width: 100%;
+	height: 100%;
 	border-radius: 10px;
 	background-color: var(--tertiary);
 	transform: rotate(10deg);
@@ -29,49 +29,19 @@
 	transform: rotate(0deg);
 }
 
-@media screen and (max-width: 948px) {
-	.photo {
-		width: 150px;
-		height: 150px;
-	}
-	.photo img {
-		width: 150px;
-		height: 150px;
-	}
-}
-
 .about__main {
 	display: flex;
 	gap: 8rem;
 	margin-top: 5rem;
+	align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-	.about__main {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-right: 0;
-		gap: 4rem;
-	}
-
-	.about__sidebar {
-		order: 2;
-	}
-
-	.photo {
-		width: 50vw;
-		height: 50vw;
-		max-width: 200px;
-		max-height: 200px;
-	}
-
-	.photo img {
-		width: 50vw;
-		height: 50vw;
-		max-width: 200px;
-		max-height: 200px;
-	}
+.about__sidebar {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .about__text {
@@ -105,4 +75,101 @@
 	margin-right: 0.5rem;
 	color: var(--secondary);
 	opacity: 0.7;
+}
+
+.about__links {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.about__links a {
+	width: 100%;
+}
+
+@media screen and (max-width: 948px) {
+	.about__main {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0;
+		margin-top: 0;
+		gap: 4rem;
+	}
+
+	.about__sidebar {
+		order: 2;
+		width: 100%;
+		flex-direction: row;
+		gap: 5rem;
+	}
+
+	.photo {
+		width: 200px;
+		height: 200px;
+	}
+
+	.about__links {
+		margin-top: 0;
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about__main {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0;
+		margin-top: 0;
+		gap: 4rem;
+	}
+
+	.about__sidebar {
+		order: 2;
+		width: 100%;
+	}
+
+	.about__links {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.photo {
+		width: 50vw;
+		height: 50vw;
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.photo img {
+		width: 50vw;
+		height: 50vw;
+		max-width: 200px;
+		max-height: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about__sidebar {
+		flex-direction: column;
+	}
+	.about__links {
+		width: 100%;
+	}
+	.about__links a {
+		width: fit-content;
+		padding: 0.5em 1.5em;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.about__links a {
+		max-width: 50vw;
+	}
 }

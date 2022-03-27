@@ -14,7 +14,7 @@ const data = {
 			{ img: todoVueTablet, class: 'project__img project__img--tablet' },
 			{ img: todoVueMobile, class: 'project__img project__img--mobile' },
 		],
-		desc: 'Todo App creada con Vue y Vue-Router para el frontend, con Node y Express para el backend y MongoDB para la base de datos. Tiene login de ususario y es completamente responsive',
+		desc: 'Aplicación fullstack responsive con login de usuario. Frontend desarrolado con Vue 3 y Vue-Router. Backend con Node y Express y MongoDB para la base de datos.',
 		technologies: ['Vue', 'Vue-Router', 'Node & Express', 'MongoDB'],
 	},
 	landingPage: {
@@ -24,7 +24,7 @@ const data = {
 			{ img: landingReactTablet, class: 'project__img project__img--tablet' },
 			{ img: landingReactMobile, class: 'project__img project__img--mobile' },
 		],
-		desc: 'Todo App creada con Vue y Vue-Router para el frontend, con Node y Express para el backend y MongoDB para la base de datos. Tiene login de ususario y es completamente responsive',
+		desc: 'Página de producto responsive, multilenguaje y con gestión de opiniones. Frontend desarrollado con React con CSS modules y Context API para el estado global.',
 		technologies: ['React', 'CSS Modules', 'Context API'],
 	},
 };

@@ -14,6 +14,17 @@ const About = () => {
 						<div className='photo'>
 							<img src={photo} alt='foto portfolio' />
 						</div>
+						<div className='about__links'>
+							<a className='btn btn--filled' href='#softSkills'>
+								Soft Skills
+							</a>
+							<a className='btn btn--filled' href='#skills'>
+								Hard Skills
+							</a>
+							<a className='btn btn--filled' href='#projects'>
+								Projects
+							</a>
+						</div>
 					</div>
 					<div className='about__text'>
 						<h3>Bienvenido!</h3>
@@ -36,9 +47,6 @@ const About = () => {
 							<br />
 							<br />
 						</p>
-						<a className='btn btn--filled' href='#softSkills'>
-							Soft Skills
-						</a>
 					</div>
 				</div>
 			</div>

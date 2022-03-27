@@ -48,13 +48,16 @@ const Contact = () => {
 			<div className='contact' ref={contactRef}>
 				<Title text='Say Hello!' number='5' />
 				<div className='contact__container'>
+					<div className='contact__image'>
+						<img src={image} alt='' />
+					</div>
 					<form className='contact__form' onSubmit={onSubmit}>
 						<div className='contact__email'>
 							<input
 								type='email'
 								className={[
 									'contact__emailInput',
-									email.active ? 'active' : null,
+									email.active ? 'blur' : null,
 								].join(' ')}
 								placeholder='Email...'
 								value={email.value}
@@ -70,7 +73,7 @@ const Contact = () => {
 						<textarea
 							className={[
 								'contact__comment',
-								comment.active ? 'active' : null,
+								comment.active ? 'blur' : null,
 							].join(' ')}
 							rows='6'
 							placeholder='Mensaje...'
@@ -91,13 +94,10 @@ const Contact = () => {
 
 						<input
 							type='submit'
-							className='contact__submitBtn'
+							className='btn btn--filled contact__submitBtn'
 							value='Enviar'
 						/>
 					</form>
-					<div className='contact__image'>
-						<img src={image} alt='' />
-					</div>
 				</div>
 			</div>
 		</section>

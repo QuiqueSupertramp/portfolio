@@ -3,9 +3,7 @@ main {
 }
 
 section {
-	/* padding-top: 7rem; */
 	padding-bottom: 5rem;
-	min-height: 80vh;
 }
 
 p {
@@ -31,4 +29,10 @@ p {
 .btn--ghost {
 	background-color: transparent;
 	color: var(--tertiary);
+}
+
+@media screen and (max-width: 500px) {
+	.btn {
+		font-size: 14px;
+	}
 }
