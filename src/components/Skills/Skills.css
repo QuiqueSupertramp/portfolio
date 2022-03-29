@@ -134,4 +134,8 @@
 	.skills__logos {
 		gap: 1rem;
 	}
+
+	.skills__wrapper {
+		padding: 3rem 2rem;
+	}
 }
