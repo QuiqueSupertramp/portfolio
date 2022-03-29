@@ -30,11 +30,28 @@ const Contact = () => {
 							</p>
 						</div>
 						<div className='contact__social'>
-							<p>quiquesupertramp@gmail.com</p>
+							<a href='mailto:quiquesupertramp@gmail.com'>
+								<p>quiquesupertramp@gmail.com</p>
+							</a>
 							<div className='contact__links'>
-								<img src={linkedin} alt='' />
-								<img src={github} alt='' />
-								<img src={instagram} alt='' />
+								<a
+									href='https://linkedin.com/in/quiquesupertramp'
+									target='_blank'
+									rel='noreferrer'>
+									<img src={linkedin} alt='linkedin' />
+								</a>
+								<a
+									href='https://github.com/QuiqueSupertramp'
+									target='_blank'
+									rel='noreferrer'>
+									<img src={github} alt='github' />
+								</a>
+								<a
+									href='https://instagram.com/quiquesupertramp'
+									target='_blank'
+									rel='noreferrer'>
+									<img src={instagram} alt='instagram' />
+								</a>
 							</div>
 						</div>
 					</div>
