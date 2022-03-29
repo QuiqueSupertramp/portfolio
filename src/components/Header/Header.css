@@ -111,12 +111,6 @@
 	transition: filter 0.3s;
 }
 
-.social:hover {
-	width: 2.1vw;
-	height: 2.1vw;
-	filter: drop-shadow(2px 4px 6px #fff3);
-}
-
 .social img {
 	width: 100%;
 	cursor: pointer;
@@ -268,5 +262,13 @@
 	.header__button {
 		font-size: 13px;
 		padding: 0.3rem 1.5rem;
+	}
+}
+
+@media screen and (hover: hover) {
+	.social:hover {
+		width: 2.1vw;
+		height: 2.1vw;
+		filter: drop-shadow(2px 4px 6px #fff3);
 	}
 }

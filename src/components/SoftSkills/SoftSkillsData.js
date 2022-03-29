@@ -19,7 +19,7 @@ const data = [
 	{
 		img: solutions,
 		title: 'Resolución de conflictos',
-		desc: 'Forman parte del día a día en un equipo y son la semilla del crecimiento. Es clave escuchar, buena comunicación y poner el foco en la solución. La creatividad puede marcar la diferencia.',
+		desc: 'Son parte del día a día y la semilla del crecimiento de un equipo. Es clave escuchar, buena comunicación y cierta creatividad.',
 	},
 	{
 		img: solutions,

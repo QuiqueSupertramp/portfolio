@@ -1,103 +1,44 @@
 import Title from '../Title/Title';
 import './Contact.css';
-import image from '../../images/contact.png';
-import useForm from '../../hooks/useForm';
-import sendEmail from '../../services/sendEmail';
-import { useState } from 'react';
-import useObserver from '../../hooks/useObserver';
+// import image from '../../images/contact.png';
 
-const validations = {
-	email: {
-		regularExp:
-			/^[a-zñÑ0-9_-]+(?:\.[a-zñÑ0-9_-]+)*@(?:[a-z0-9](?:[a-z0-9-_]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9]*[a-z0-9])?$/,
-		errorMessage: 'El email es incorrecto',
-	},
-};
+import github from '../../images/social/github.svg';
+import instagram from '../../images/social/instagram.svg';
+import linkedin from '../../images/social/linkedin.svg';
+
+import useObserver from '../../hooks/useObserver';
+import ContactForm from './ContactForm/ContactForm';
 
 const Contact = () => {
-	const email = useForm(validations.email.regularExp);
-	const comment = useForm();
 	const { ref: contactRef } = useObserver();
-
-	const [submitError, setSubmitError] = useState(null);
-
-	const onSubmit = e => {
-		e.preventDefault();
-		if (!email.error && comment.value.length !== 0) {
-			const data = {
-				email: email.value,
-				comment: comment.value,
-			};
-			sendEmail(data).then(res => {
-				if (res.ok === true) {
-					setSubmitError(false);
-					email.reset();
-					comment.reset();
-				} else {
-					setSubmitError(true);
-				}
-				setTimeout(() => {
-					setSubmitError(null);
-				}, 4000);
-			});
-		}
-	};
 
 	return (
 		<section id='contact'>
 			<div className='contact' ref={contactRef}>
 				<Title text='Say Hello!' number='5' />
 				<div className='contact__container'>
-					<div className='contact__image'>
-						<img src={image} alt='' />
-					</div>
-					<form className='contact__form' onSubmit={onSubmit}>
-						<div className='contact__email'>
-							<input
-								type='email'
-								className={[
-									'contact__emailInput',
-									email.active ? 'blur' : null,
-								].join(' ')}
-								placeholder='Email...'
-								value={email.value}
-								onChange={email.onChange}
-								onFocus={email.onFocus}
-								onBlur={email.onBlur}
-								required
-							/>
-							<div className='contact__emailError'>
-								{email.error && <p>* {validations.email.errorMessage}</p>}
+					<div className='contact__sidebar'>
+						<div className='contact__text'>
+							<p>
+								Gracias por llegar hasta aquí. Espero que este portfolio, hecho
+								con mucho cariño, haya sido de tu agrado.
+							</p>
+							<br />
+							<p>
+								Contacta conmigo a través del correo electrónico, redes sociales
+								o rellenando el formulario. Hasta pronto!
+							</p>
+						</div>
+						<div className='contact__social'>
+							<p>quiquesupertramp@gmail.com</p>
+							<div className='contact__links'>
+								<img src={linkedin} alt='' />
+								<img src={github} alt='' />
+								<img src={instagram} alt='' />
 							</div>
 						</div>
-						<textarea
-							className={[
-								'contact__comment',
-								comment.active ? 'blur' : null,
-							].join(' ')}
-							rows='6'
-							placeholder='Mensaje...'
-							value={comment.value}
-							onChange={comment.onChange}
-							onFocus={comment.onFocus}
-							onBlur={comment.onBlur}
-							required></textarea>
-						{submitError !== null && (
-							<div className='contact__error'>
-								<h4>
-									{submitError === false
-										? 'Mensaje enviado correctamente'
-										: 'No se ha podido enviar'}
-								</h4>
-							</div>
-						)}
-
-						<input
-							type='submit'
-							className='btn btn--filled contact__submitBtn'
-							value='Enviar'
-						/>
-					</form>
+					</div>
+					<ContactForm />
 				</div>
 			</div>
 		</section>

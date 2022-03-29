@@ -13,20 +13,24 @@ import eslint from '../../images/skills/tools/eslint.svg';
 import scrum from '../../images/skills/scrum/scrum.svg';
 
 const data = {
-	frontend: {
-		desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel debitis molestiae tenetur. Rerum provident laudantium nostrum tempore dicta porro',
+	1: {
+		title: 'Frontend',
+		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Me gusta dominar CSS y JavaScript Vanilla. En cuanto a frameworks, empecé con Vue y ahora me estoy especializando en React.',
 		imgs: [html, css, js, react, vue],
 	},
-	backend: {
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officia a reprehenderit facere qui similique, quam reiciendis vitae laborum magni ut hic repellat animi inventore',
+	2: {
+		title: 'Backend',
+		desc: 'He desarrollado una API REST para una lista de tareas con Node y MongoDB y sin duda es un área en la que también me gustaría seguir formándome.',
 		imgs: [node, express, mongoDB],
 	},
-	tools: {
-		desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel debitis molestiae tenetur. Rerum provident laudantium nostrum tempore dicta porro',
+	3: {
+		title: 'Tools',
+		desc: 'He trabajado con varias de las herramientas que se entienden como básicas, pero me falta aprender a utilizarlas en una experiencia real.',
 		imgs: [git, vite, npm, eslint],
 	},
-	scrum: {
-		desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel debitis molestiae tenetur. Rerum provident laudantium nostrum tempore dicta porro',
+	4: {
+		title: 'Scrum',
+		desc: 'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos que me resultan familiares (precisamente SCRUM viene del Rugby).',
 		imgs: [scrum],
 	},
 };

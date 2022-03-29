@@ -8,6 +8,7 @@ section {
 
 p {
 	line-height: 1.5;
+	letter-spacing: 0.3px;
 }
 
 .btn {
@@ -34,5 +35,6 @@ p {
 @media screen and (max-width: 500px) {
 	.btn {
 		font-size: 14px;
+		padding: 0.5em 1.5em;
 	}
 }

@@ -12,21 +12,30 @@ const ProjectCard = ({ project }) => {
 			</div>
 			<h3 className='project__h3'>{dataProject.title}</h3>
 			<p className='project__description'>{dataProject.desc}</p>
-			{/* {dataProject.desc} */}
-			{/* <div className='project__technologies'>
-				<ul>
-					{dataProject.technologies.map((el, index) => (
-						<li key={index}>{el}</li>
-					))}
-				</ul>
-			</div> */}
 			<div className='project__links'>
-				<a href='' className='btn btn--filled'>
-					Code
-				</a>
-				<a href='' className='btn btn--filled'>
+				<a
+					href={dataProject.links.web}
+					target='_blank'
+					rel='noreferrer'
+					className='btn btn--filled'>
 					Web
 				</a>
+				<a
+					href={dataProject.links.code}
+					target='_blank'
+					rel='noreferrer'
+					className='btn btn--filled'>
+					{dataProject.links.code2 ? 'Frontend Code' : 'Code'}
+				</a>
+				{dataProject.links.code2 && (
+					<a
+						href={dataProject.links.code2}
+						target='_blank'
+						rel='noreferrer'
+						className='btn btn--filled'>
+						Backend Code
+					</a>
+				)}
 			</div>
 		</div>
 	);

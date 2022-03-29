@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useForm = regularExp => {
+const useInput = regularExp => {
 	const [value, setValue] = useState('');
 	const [error, setError] = useState(false);
 	const [active, setActive] = useState(false);
@@ -19,4 +19,4 @@ const useForm = regularExp => {
 	return { value, error, active, onChange, onFocus, onBlur, reset };
 };
 
-export default useForm;
+export default useInput;
