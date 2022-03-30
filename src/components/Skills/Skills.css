@@ -79,9 +79,37 @@
 	gap: 2rem;
 }
 
+.skills__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skills__title img {
+	height: 1.2rem;
+	transition: all 0.3s;
+	opacity: 0;
+	animation: fade-in 1.5s forwards;
+}
+
+.skills__reverse {
+	transform: scale(1, -1);
+	transition: all 0.3s;
+}
+
 .skills__h3 {
 	color: var(--secondary);
 	text-transform: uppercase;
+}
+
+.skills__text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.skills__toggle {
+	display: none;
 }
 
 .skills__logos {
@@ -112,7 +140,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 2rem;
+		gap: 1rem;
 		margin-left: 0;
 		padding-top: 0;
 	}
@@ -136,6 +164,6 @@
 	}
 
 	.skills__wrapper {
-		padding: 3rem 2rem;
+		padding: 2rem;
 	}
 }

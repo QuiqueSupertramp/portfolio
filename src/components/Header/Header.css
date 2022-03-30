@@ -171,12 +171,6 @@
 	}
 }
 
-/* @media screen and (max-width: 1500px) {
-	.avatarMenu {
-		right: 0;
-	}
-} */
-
 @media screen and (orientation: portrait) {
 	.header__text {
 		height: 60vh;
@@ -267,8 +261,8 @@
 
 @media screen and (hover: hover) {
 	.social:hover {
-		width: 2.1vw;
-		height: 2.1vw;
+		width: 8%;
+		height: 8%;
 		filter: drop-shadow(2px 4px 6px #fff3);
 	}
 }

@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 3rem;
-	gap: 3rem;
+	gap: 4rem;
 }
 
 .contact__form {
@@ -38,7 +38,6 @@
 }
 
 .blur {
-	background-color: var(--secondary-50) !important;
 	transition: background 0.3s;
 	border: 2px solid var(--tertiary);
 }

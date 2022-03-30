@@ -30,7 +30,7 @@ const data = {
 	},
 	4: {
 		title: 'Scrum',
-		desc: 'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos que me resultan familiares (precisamente SCRUM viene del Rugby).',
+		desc: 'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos que me resultan familiares. SCRUM, por ejemplo, es una metodología que viene del rugby.',
 		imgs: [scrum],
 	},
 };
