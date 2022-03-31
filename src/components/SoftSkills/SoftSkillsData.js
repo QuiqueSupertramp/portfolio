@@ -3,7 +3,8 @@ import teamwork from '../../images/softSkills/teamwork.svg';
 import conflicts from '../../images/softSkills/conflicts.svg';
 import changes from '../../images/softSkills/changes.svg';
 import pressure from '../../images/softSkills/pressure.svg';
-import knowledge from '../../images/softSkills/knowledge.svg';
+// import knowledge from '../../images/softSkills/knowledge.svg';
+import xxx from '../../images/softSkills/xxx.svg';
 
 const data = [
 	{
@@ -32,7 +33,7 @@ const data = [
 		desc: 'Estoy acostumbrado a trabajar con objetivos a corto y largo plazo. Serenidad y una buena planificación son los ingredientes del éxito.',
 	},
 	{
-		img: knowledge,
+		img: xxx,
 		title: 'Formación continuada',
 		desc: 'Conozco el camino y los métodos de aprendizaje eficientes, lo que me permite ser autodidacta y tener facilidad para formar a otras personas.',
 	},
