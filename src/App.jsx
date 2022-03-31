@@ -1,6 +1,5 @@
 import './App.css';
 import { Header } from './components/Header/Header';
-// import { NavBar } from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
@@ -10,7 +9,6 @@ import SoftSkills from './components/SoftSkills/SoftSkills';
 function App() {
 	return (
 		<div className='App'>
-			{/* <NavBar /> */}
 			<Header />
 			<main>
 				<About />

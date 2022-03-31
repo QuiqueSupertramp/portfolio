@@ -10,7 +10,6 @@ import SkillsViewMobile from './SkillsViewMobile/SkillsViewMobile';
 const Skills = () => {
 	const [view, setView] = useState(1);
 	const { ref: skillsRef } = useObserver();
-	console.log('skillsRef', skillsRef);
 
 	return (
 		<section id='skills'>

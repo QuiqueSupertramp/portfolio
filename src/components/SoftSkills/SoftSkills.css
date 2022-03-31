@@ -19,7 +19,6 @@
 	gap: 1rem;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	padding: 2rem 1rem;
 	text-align: center;
 	border-radius: 10px;
@@ -34,7 +33,7 @@
 }
 
 .softSkills__wrapper img {
-	width: 15%;
+	height: 2rem;
 }
 
 .softSkills__wrapper h4 {

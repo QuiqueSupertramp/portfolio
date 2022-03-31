@@ -6,7 +6,7 @@ const SkillsViewMobile = ({ skill }) => {
 	const toggle = useRef();
 	const onClick = e => {
 		e.target.classList.toggle('skills__reverse');
-		toggle?.current?.classList.toggle('skills__toggle');
+		toggle.current?.classList.toggle('skills__toggle');
 	};
 	return (
 		<div className='skills__wrapper'>
