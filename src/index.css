@@ -9,7 +9,7 @@
 	--secondary-50: #fd701444;
 	--tertiary: #9ca3af;
 
-	--montserrat: 'Montserrat', sans-serif;
+	--poppins: 'Poppins', sans-serif;
 	--jetBrains: 'JetBrains Mono', monospace;
 
 	--sidePadding: 150px;
@@ -23,7 +23,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--poppins);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 16px;

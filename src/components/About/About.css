@@ -52,6 +52,7 @@
 .about__text h3 {
 	color: var(--secondary);
 	margin-bottom: 1rem;
+	font-size: 1.4rem;
 }
 
 .about__skills ul {
