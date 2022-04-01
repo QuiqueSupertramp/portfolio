@@ -9,12 +9,12 @@ const data = [
 	{
 		img: teamwork,
 		title: 'Trabajo en equipo',
-		desc: '"Llevo años creando sinergias, poniendo el foco en la responsabilidad individual y proyectando hacia el colectivo. La herramienta clave es la asertividad."',
+		desc: '"El secreto radica en crear sinergias, proyectando los objetivos individuales hacia el colectivo. Es vital dominar la asertividad."',
 	},
 	{
 		img: pressure,
 		title: 'Tolerancia a la presión',
-		desc: '"Acostumbrado a trabajar bajo presión, tanto en el día a día como en la toma de decisiones. La herramiento clave es la preparación."',
+		desc: '"Estoy acostumbrado a trabajar bajo presión, tanto en el día a día como en la toma de decisiones. Siempre con preparación y responsabilidad."',
 	},
 	{
 		img: changes,
@@ -24,7 +24,7 @@ const data = [
 	{
 		img: conflicts,
 		title: 'Resolución de conflictos',
-		desc: '"Son parte del día a día y la semilla del crecimiento de un equipo. Es clave escuchar, buena comunicación y cierta creatividad."',
+		desc: '"Los conflictos son parte del día a día y la semilla del crecimiento de un equipo. Es clave escuchar, buena comunicación y cierta creatividad."',
 	},
 	{
 		img: results,

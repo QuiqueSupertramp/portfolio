@@ -15,17 +15,17 @@ import scrum from '../../images/skills/scrum/scrum.svg';
 const data = {
 	1: {
 		title: 'Frontend',
-		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Me gusta dominar CSS y JavaScript Vanilla. En cuanto a frameworks, empecé con Vue y ahora me estoy especializando en React.',
+		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, empecé con VUE y ahora me estoy especializando en REACT.',
 		imgs: [html, css, js, react, vue],
 	},
 	2: {
 		title: 'Backend',
-		desc: 'He desarrollado una API REST para una lista de tareas con Node y MongoDB y sin duda es un área en la que también me gustaría seguir formándome.',
+		desc: 'Imprescindible poder crear un crud con NODE y EXPRESS. En cuanto a bases de datos, por ahora he trabajado sólo con MONGODB. Sin duda es un área en la que también me gustaría seguir formándome.',
 		imgs: [node, express, mongoDB],
 	},
 	3: {
 		title: 'Tools',
-		desc: 'He trabajado con varias de las herramientas que se entienden como básicas, pero me falta aprender a utilizarlas en una experiencia real.',
+		desc: 'En mi día a día trabajo con algunas herramientas como GIT, ESLINT o NPM, y estoy aprendiendo otras como VITE, utilizado para este proyecto. Ahora me falta aprender a usarlas de manera profesional dentro de un equipo.',
 		imgs: [git, vite, npm, eslint],
 	},
 	4: {
