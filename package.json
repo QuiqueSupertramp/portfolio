@@ -1,7 +1,7 @@
 {
 	"name": "portfolio",
 	"private": true,
-	"homepage": "https://quiquesupertramp.github.io/portfolio/",
+	"homepage": "https://quiquesupertramp.github.io/portfolio",
 	"version": "0.0.0",
 	"scripts": {
 		"dev": "vite",
