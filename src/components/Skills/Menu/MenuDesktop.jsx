@@ -47,7 +47,7 @@ const MenuDesktop = ({ view, setView }) => {
 						data-view='4'
 						onClick={handleView}
 						className={view === 4 ? 'active' : null}>
-						Scrum
+						Methodologies
 					</button>
 				</li>
 			</ul>

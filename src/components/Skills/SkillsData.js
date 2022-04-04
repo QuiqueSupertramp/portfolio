@@ -29,7 +29,7 @@ const data = {
 		imgs: [git, vite, npm, eslint],
 	},
 	4: {
-		title: 'Scrum',
+		title: 'Methodologies',
 		desc: 'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos que me resultan familiares. SCRUM, por ejemplo, es una metodología que viene del rugby.',
 		imgs: [scrum],
 	},

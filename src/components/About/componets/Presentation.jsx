@@ -10,7 +10,7 @@ const Presentation = () => {
 				<br />
 				Soy entrenador de baloncesto y los últimos 6 años he estado dirigiendo
 				un club de casi 200 familias, lo que me ha permitido desarrolllar
-				habilidades personales, metodologicas y de gestión muy valiosas para
+				habilidades personales, metodológicas y de gestión muy valiosas para
 				cualquier trabajo en equipo.
 				<br />
 				<br />
