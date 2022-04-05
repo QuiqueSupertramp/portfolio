@@ -1,3 +1,5 @@
+import CV from '../../../images/QuiqueLopezCV.pdf';
+
 const a = '<';
 const b = ' />';
 
@@ -14,7 +16,9 @@ const Sidebar = () => {
 				<a href='#about' className='btn btn--filled'>
 					About Me
 				</a>
-				<button className='btn btn--ghost'>Resume</button>
+				<a download='CV Enrique López' href={CV} className='btn btn--ghost'>
+					Download CV
+				</a>
 			</div>
 		</div>
 	);
