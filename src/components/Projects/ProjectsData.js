@@ -1,10 +1,10 @@
-import todoVueDesktop from '../../images/projects/todoVue.png';
-import todoVueTablet from '../../images/projects/todoVue-tb.png';
-import todoVueMobile from '../../images/projects/todoVue-mb.png';
+const todoVueDesktop = 'images/projects/todoVue.png';
+const todoVueTablet = 'images/projects/todoVue-tb.png';
+const todoVueMobile = 'images/projects/todoVue-mb.png';
 
-import landingReactDesktop from '../../images/projects/landing.png';
-import landingReactTablet from '../../images/projects/landing-tb.png';
-import landingReactMobile from '../../images/projects/landing-mb.png';
+const landingReactDesktop = 'images/projects/landing.png';
+const landingReactTablet = 'images/projects/landing-tb.png';
+const landingReactMobile = 'images/projects/landing-mb.png';
 
 const data = {
 	todoApp: {
@@ -28,7 +28,7 @@ const data = {
 			{ img: landingReactTablet, class: 'project__img project__img--tablet' },
 			{ img: landingReactMobile, class: 'project__img project__img--mobile' },
 		],
-		desc: 'Página de producto responsive, multilenguaje y con gestión de opiniones. Frontend desarrollado con React, CSS modules y Context API para el estado global.',
+		desc: 'Página de producto multilenguaje y con gestión de opiniones (Context API). Frontend desarrollado con React y CSS modules',
 		links: {
 			code: 'https://github.com/QuiqueSupertramp/landing-product-page-react',
 			web: 'https://quiquesupertramp.github.io/landing-product-page-react/',

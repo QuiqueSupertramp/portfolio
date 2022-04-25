@@ -7,8 +7,17 @@ const SkillsView = ({ skill }) => {
 				<h3 className='skills__h3'>{data[skill].title}</h3>
 				<p className='skills__p'>{data[skill].desc}</p>
 				<div className='skills__logos'>
-					{data[skill].imgs.map(el => {
-						return <img src={el} alt='' className='skills__img' key={el} />;
+					{data[skill].images.map(el => {
+						console.log('el', el);
+						return (
+							<img
+								key={el.text}
+								src={el.img}
+								title={el.text}
+								alt={el.text}
+								className='skills__img'
+							/>
+						);
 					})}
 				</div>
 			</article>

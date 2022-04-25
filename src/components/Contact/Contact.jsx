@@ -1,13 +1,12 @@
 import Title from '../Title/Title';
 import './Contact.css';
-// import image from '../../images/contact.png';
-
-import github from '../../images/social/github.svg';
-import instagram from '../../images/social/instagram.svg';
-import linkedin from '../../images/social/linkedin.svg';
 
 import useObserver from '../../hooks/useObserver';
 import ContactForm from './ContactForm/ContactForm';
+
+const github = 'images/social/github.svg';
+const linkedin = 'images/social/linkedin.svg';
+const instagram = 'images/social/instagram.svg';
 
 const Contact = () => {
 	const { ref: contactRef } = useObserver();

@@ -1,10 +1,8 @@
-import photo from '../../../images/quique1.png';
-
 const Sidebar = () => {
 	return (
 		<div className='about__sidebar'>
 			<div className='photo'>
-				<img src={photo} alt='foto portfolio' />
+				<img src='images/quiquePerfil.png' alt='foto portfolio' />
 			</div>
 			<div className='about__links'>
 				<a className='btn btn--filled' href='#softSkills'>

@@ -29,7 +29,7 @@ body {
 	font-size: 16px;
 	background-color: #1c1c1c;
 	color: var(--tertiary);
-	background-image: url(./images/bg.png);
+	background-image: url(images/background.png);
 }
 
 @media screen and (max-width: 1092px) {

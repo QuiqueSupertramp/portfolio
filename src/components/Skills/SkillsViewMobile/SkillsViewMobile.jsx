@@ -1,5 +1,4 @@
 import data from '../SkillsData.js';
-import down from '../../../images/skills/down.svg';
 import { useRef } from 'react';
 
 const SkillsViewMobile = ({ skill }) => {
@@ -13,13 +12,20 @@ const SkillsViewMobile = ({ skill }) => {
 			<article className='skills__main'>
 				<div className='skills__title'>
 					<h3 className='skills__h3'>{data[skill].title}</h3>
-					<img onClick={onClick} src={down} alt='' />
+					<img onClick={onClick} src='images/skills/down.svg' alt='' />
 				</div>
 				<div className='skills__text skills__toggle' ref={toggle}>
 					<p className='skills__p'>{data[skill].desc}</p>
 					<div className='skills__logos'>
-						{data[skill].imgs.map(el => {
-							return <img src={el} alt='' className='skills__img' key={el} />;
+						{data[skill].images.map(el => {
+							return (
+								<img
+									src={el.img}
+									alt={el.text}
+									className='skills__img'
+									key={el.text}
+								/>
+							);
 						})}
 					</div>
 				</div>

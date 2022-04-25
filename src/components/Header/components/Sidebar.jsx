@@ -1,7 +1,4 @@
-import CV from '../../../images/QuiqueLopezCV.pdf';
-
-const a = '<';
-const b = ' />';
+import './Sidebar.css';
 
 const Sidebar = () => {
 	return (
@@ -9,14 +6,17 @@ const Sidebar = () => {
 			<span className='header__span'>const NAME = </span>
 			<h1>Quique Supertramp</h1>
 			<h2>
-				<span className='orange'>{a}</span>DesarrolladorWeb
-				<span className='orange'>{b}</span>
+				<span className='orange'>{'<'}</span>DesarrolladorWeb
+				<span className='orange'>{'/>'}</span>
 			</h2>
 			<div className='header__buttons'>
 				<a href='#about' className='btn btn--filled'>
 					About Me
 				</a>
-				<a download='CV Enrique López' href={CV} className='btn btn--ghost'>
+				<a
+					download='CV Enrique López'
+					href='public/resources/QuiqueLopezCV.pdf'
+					className='btn btn--ghost'>
 					Download CV
 				</a>
 			</div>

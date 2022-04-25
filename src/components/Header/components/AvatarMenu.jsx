@@ -1,7 +1,8 @@
-import emoji from '../../../images/bienvenidos.png';
-import github from '../../../images/social/github.svg';
-import linkedin from '../../../images/social/linkedin.svg';
-import instagram from '../../../images/social/instagram.svg';
+import './AvatarMenu.css';
+
+const github = 'images/social/github.svg';
+const linkedin = 'images/social/linkedin.svg';
+const instagram = 'images/social/instagram.svg';
 
 const AvatarMenu = () => {
 	return (
@@ -32,7 +33,7 @@ const AvatarMenu = () => {
 			</div>
 			<img
 				className='header__emoji'
-				src={emoji}
+				src='images/bienvenidos.png'
 				alt='Quique Supertramp Avatar'
 			/>
 		</div>
