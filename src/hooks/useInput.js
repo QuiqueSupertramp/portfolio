@@ -1,22 +1,29 @@
 import { useEffect, useState } from 'react';
 
 const useInput = regularExp => {
-	const [value, setValue] = useState('');
-	const [error, setError] = useState(false);
-	const [active, setActive] = useState(false);
+	const [input, setInput] = useState({
+		value: '',
+		error: false,
+		active: false,
+	});
 
-	const onChange = e => setValue(e.target.value);
-	const reset = () => setValue('');
-	const onFocus = () => setActive(true);
-	const onBlur = () => setActive(false);
+	const onChange = e => setInput({ ...input, value: e.target.value });
+	const reset = () => setInput({ ...input, value: '' });
+	const onFocus = () => setInput({ ...input, active: true });
+	const onBlur = () => setInput({ ...input, active: false });
+	const setError = error => setInput({ ...input, error });
+
+	const validateInput = () => {
+		if (!regularExp) return;
+		if (input.value.length === 0) return setError(false);
+		regularExp.test(input.value) ? setError(false) : setError(true);
+	};
 
 	useEffect(() => {
-		if (!regularExp) return;
-		if (value.length === 0) return setError(false);
-		regularExp.test(value) ? setError(false) : setError(true);
-	}, [value]);
+		validateInput();
+	}, [input.value]);
 
-	return { value, error, active, onChange, onFocus, onBlur, reset };
+	return { input, onChange, onFocus, onBlur, reset };
 };
 
 export default useInput;

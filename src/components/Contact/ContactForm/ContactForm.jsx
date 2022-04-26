@@ -4,44 +4,48 @@ import { useState } from 'react';
 import Emailnput from './Emailnput';
 import CommentInput from './CommentInput';
 import ErrorSubmit from './ErrorSubmit';
-
-const validations = {
-	email: {
-		regularExp:
-			/^[a-zñÑ0-9_-]+(?:\.[a-zñÑ0-9_-]+)*@(?:[a-z0-9](?:[a-z0-9-_]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9]*[a-z0-9])?$/,
-		errorMessage: 'El email es incorrecto',
-	},
-};
+import formValidations from '../../../lib/formValidations';
 
 const ContactForm = () => {
-	const email = useInput(validations.email.regularExp);
+	const email = useInput(formValidations.email.regularExp);
 	const comment = useInput();
 	const [submitError, setSubmitError] = useState(null);
 
-	const sendIt = () => {
+	const emailSended = () => {
 		setSubmitError(false);
 		email.reset();
 		comment.reset();
 	};
 
+	const cleanErrorMessage = () => setTimeout(() => setSubmitError(null), 5000);
+
 	const onSubmit = e => {
 		e.preventDefault();
-		if (!email.error && comment.value.length !== 0) {
-			const data = {
-				email: email.value,
-				comment: comment.value,
-			};
-			sendEmail(data).then(res => {
-				res.ok === true ? sendIt() : setSubmitError(true);
-				setTimeout(() => setSubmitError(null), 4000);
-			});
+
+		if (email.input.error || comment.input.value.length === 0) {
+			setSubmitError(true);
+			cleanErrorMessage();
+			return;
 		}
+
+		const data = {
+			email: email.input.value,
+			comment: comment.input.value,
+		};
+
+		sendEmail(data).then(res => {
+			res.ok === true ? emailSended() : setSubmitError(true);
+			cleanErrorMessage();
+		});
 	};
 	return (
 		<form className='contact__form' onSubmit={onSubmit}>
-			<Emailnput validations={validations} email={email} />
+			<Emailnput validation={formValidations.email} email={email} />
 			<CommentInput comment={comment} />
 			{submitError !== null && <ErrorSubmit submitError={submitError} />}
+			<div
+				className='g-recaptcha'
+				data-sitekey='6LeUn6EfAAAAAKIJPZ6etrL44ecGrBJWSu7RMW4R'></div>
 			<input
 				type='submit'
 				className='btn btn--filled contact__submitBtn'
