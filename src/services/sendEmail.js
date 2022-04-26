@@ -1,4 +1,4 @@
-const URL = 'https://formspree.io/f/xnqwvpbo';
+const URL = `https://formspree.io/f/${import.meta.env.VITE_EMAIL_KEY}`;
 
 const sendEmail = async data => {
 	const fetchMail = await fetch(URL, {

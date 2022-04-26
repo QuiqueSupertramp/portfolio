@@ -8,7 +8,6 @@ const SkillsView = ({ skill }) => {
 				<p className='skills__p'>{data[skill].desc}</p>
 				<div className='skills__logos'>
 					{data[skill].images.map(el => {
-						console.log('el', el);
 						return (
 							<img
 								key={el.text}

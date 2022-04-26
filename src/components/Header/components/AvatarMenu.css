@@ -46,13 +46,12 @@
 	transform-origin: 700%;
 	cursor: pointer;
 	z-index: 99;
-	filter: drop-shadow(2px 4px 6px #000);
-	transition: filter 0.3s;
 }
 
 .social img {
 	width: 100%;
 	cursor: pointer;
+	transition: all 0.2s;
 }
 
 .social1 {
@@ -60,6 +59,21 @@
 }
 .social1 img {
 	transform: rotate(calc(-30deg));
+	transition: all 0.2s;
+}
+
+.social img:hover {
+	transform: scale(1.4);
+}
+
+.social1 img:hover {
+	transform: scale(1.4) rotate(-30deg);
+	transition: all 0.2s;
+}
+
+.social2 img:hover {
+	transform: scale(1.4) rotate(-60deg);
+	transition: all 0.2s;
 }
 
 .social2 {

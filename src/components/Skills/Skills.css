@@ -130,8 +130,12 @@
 
 @media screen and (max-width: 948px) {
 	.skills__img {
+		width: 17%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.skills__img {
 		width: 12%;
-		/* min-width: 25px; */
 	}
 }
 

@@ -1,8 +1,8 @@
 const data = [
 	{
-		img: 'images/softSkills/teamwork.svg',
-		title: 'Trabajo en equipo',
-		desc: '"El secreto radica en crear sinergias, proyectando los objetivos individuales hacia el colectivo. Es vital dominar la asertividad."',
+		img: 'images/softSkills/conflicts.svg',
+		title: 'Resolución de conflictos',
+		desc: '"Los conflictos son parte del día a día y la semilla del crecimiento de un equipo. Es clave escuchar, buena comunicación y cierta creatividad."',
 	},
 	{
 		img: 'images/softSkills/pressure.svg',
@@ -15,9 +15,9 @@ const data = [
 		desc: '"Vengo de un mundo dónde el primero en adaptarse juega con ventaja. Las herramientas clave son la curiosidad y poner el foco en los detalles."',
 	},
 	{
-		img: 'images/softSkills/conflicts.svg',
-		title: 'Resolución de conflictos',
-		desc: '"Los conflictos son parte del día a día y la semilla del crecimiento de un equipo. Es clave escuchar, buena comunicación y cierta creatividad."',
+		img: 'images/softSkills/teamwork.svg',
+		title: 'Trabajo en equipo',
+		desc: '"El secreto radica en crear sinergias, proyectando los objetivos individuales hacia el colectivo. Es vital dominar la asertividad."',
 	},
 	{
 		img: 'images/softSkills/results.svg',
