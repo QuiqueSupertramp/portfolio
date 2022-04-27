@@ -1,17 +1,16 @@
 import './SoftSkills.css';
-import useObserver from '../../hooks/useObserver';
-import data from './SoftSkillsData';
-
 import Title from '../Title/Title';
-import SoftSkillsCard from './SoftSkillsCard/SoftSkillsCard';
+import SoftSkillsCard from './components/SoftSkillsCard';
+import data from './SoftSkillsData';
+import useObserver from '../../hooks/useObserver';
 
 const SoftSkills = () => {
 	const { ref: softSkillsRef } = useObserver();
 
 	return (
-		<section id='softSkills' className='softSkills' ref={softSkillsRef}>
-			<Title number='2' text='Soft Skills' />
-			<div className='softSkills__container'>
+		<section id="softSkills" className="softSkills" ref={softSkillsRef}>
+			<Title number="2" text="Soft Skills" />
+			<div className="softSkills__container">
 				{data.map(el => (
 					<SoftSkillsCard key={el.id} softSkill={el} />
 				))}

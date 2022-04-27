@@ -39,7 +39,7 @@
 	background-color: var(--primary);
 	border-radius: 50%;
 	padding: 14px;
-	transition: all 0.25s ease-out;
+	transition: all 0.1s;
 }
 
 .btn--filled {
@@ -52,20 +52,23 @@
 .btn--ghost {
 	background-color: transparent;
 	color: var(--tertiary);
+	transition: all 0.1s;
 }
 
 @media screen and (hover: hover) {
 	.btn--rounded:hover {
 		box-shadow: 0px 0px 20px #0004;
 		transform: scale(1.15);
-		transition: all 0.25s ease-out;
+		transition: all 0.25s;
 	}
 
 	.btn--filled:hover,
 	.btn--ghost:hover {
 		box-shadow: 2px 2px 10px #0008;
 		transform: scale(1.03);
-		transition: all 0.25s ease-out;
+		-webkit-transform: scale(1.03);
+		-moz-transform: scale(1.03);
+		transition: all 0.25s;
 	}
 }
 

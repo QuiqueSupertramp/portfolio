@@ -14,6 +14,9 @@
 
 	--sidePadding: 150px;
 	--headerHeight: 100vh;
+
+	--scrollbarBG: #1c1c1c;
+	--thumbBG: #9ca3af88;
 }
 
 html {
@@ -73,4 +76,22 @@ a {
 	:root {
 		--sidePadding: 25px;
 	}
+}
+
+/* SCROLL BAR */
+
+body::-webkit-scrollbar {
+	width: 11px;
+}
+body {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG);
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
 }

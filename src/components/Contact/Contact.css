@@ -12,6 +12,8 @@
 	gap: 4rem;
 }
 
+/* FORM */
+
 .contact__form {
 	align-items: center;
 	display: flex;
@@ -55,16 +57,6 @@
 	margin-top: 0.5rem;
 }
 
-.contact__image {
-	width: 35%;
-}
-
-.contact__image img {
-	width: 100%;
-	filter: drop-shadow(2px 4px 6px #000);
-	transform: scale(-1, 1);
-}
-
 .contact__error {
 	background-color: var(--secondary);
 	border-radius: 5px;
@@ -73,6 +65,8 @@
 	text-align: center;
 	width: 100%;
 }
+
+/* SIDEBAR */
 
 .contact__sidebar {
 	width: 40%;
@@ -109,6 +103,8 @@
 	width: 1.5rem;
 	display: block;
 }
+
+/* MEDIAS */
 
 @media screen and (max-width: 1200px) {
 	.contact__container {

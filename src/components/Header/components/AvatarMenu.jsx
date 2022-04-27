@@ -1,40 +1,36 @@
 import './AvatarMenu.css';
 
-const github = 'images/social/github.svg';
-const linkedin = 'images/social/linkedin.svg';
-const instagram = 'images/social/instagram.svg';
-
 const AvatarMenu = () => {
 	return (
-		<div className='avatarMenu'>
-			<div className='header__circle'></div>
-			<div className='socials'>
+		<div className="avatarMenu">
+			<div className="header__circle"></div>
+			<div className="socials">
 				<a
-					href='https://github.com/QuiqueSupertramp'
-					className='social'
-					target='_blank'
-					rel='noreferrer'>
-					<img src={github} alt='github' />
+					href="https://github.com/QuiqueSupertramp"
+					className="social"
+					target="_blank"
+					rel="noreferrer">
+					<img src="images/social/github.svg" alt="github" />
 				</a>
 				<a
-					href='https://linkedin.com/in/quiquesupertramp'
-					className='social social1'
-					target='_blank'
-					rel='noreferrer'>
-					<img src={linkedin} alt='linkedin' />
+					href="https://linkedin.com/in/quiquesupertramp"
+					className="social social1"
+					target="_blank"
+					rel="noreferrer">
+					<img src="images/social/linkedin.svg" alt="linkedin" />
 				</a>
 				<a
-					href='https://instagram.com/quiquesupertramp'
-					className='social social2'
-					target='_blank'
-					rel='noreferrer'>
-					<img src={instagram} alt='instagram' />
+					href="https://instagram.com/quiquesupertramp"
+					className="social social2"
+					target="_blank"
+					rel="noreferrer">
+					<img src="images/social/instagram.svg" alt="instagram" />
 				</a>
 			</div>
 			<img
-				className='header__emoji'
-				src='images/avatar.png'
-				alt='Quique Supertramp Avatar'
+				className="header__emoji"
+				src="images/avatar.png"
+				alt="Quique Supertramp Avatar"
 			/>
 		</div>
 	);

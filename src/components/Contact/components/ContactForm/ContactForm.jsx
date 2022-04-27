@@ -1,22 +1,24 @@
-import useInput from '../../../hooks/useInput';
-import sendEmail from '../../../services/sendEmail';
+import sendEmail from '../../../../services/sendEmail';
 import { useState, useEffect } from 'react';
 import Emailnput from './Emailnput';
 import CommentInput from './CommentInput';
 import ErrorSubmit from './ErrorSubmit';
-import formValidations from '../../../lib/formValidations';
+import formValidations from '../../../../lib/formValidations';
+import useInput from '../../../../hooks/useInput';
 
 const ContactForm = () => {
 	const email = useInput(formValidations.email.regularExp);
 	const comment = useInput();
 	const [submitError, setSubmitError] = useState(null);
 
+	// Efecto para q el mensaje de éxito o error aparezca durante 5sg
 	useEffect(() => {
 		if (submitError === null) return;
 		const timeoutID = setTimeout(() => setSubmitError(null), 5000);
 		return () => clearTimeout(timeoutID);
 	}, [submitError]);
 
+	// Función para mail enviado correctamente
 	const emailSended = () => {
 		setSubmitError(false);
 		email.reset();
