@@ -26,7 +26,7 @@ html {
 
 body {
 	background-color: #1c1c1c;
-	background-image: url(images/background.png);
+	background-image: url('images/background.png');
 	color: var(--tertiary);
 	font-family: var(--poppins);
 	font-size: 16px;
