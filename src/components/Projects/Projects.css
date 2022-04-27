@@ -64,9 +64,7 @@
 	border-radius: 5px;
 	display: inline-block;
 	padding: 0.3rem 0.7rem;
-	font-family: 'JetBrains Mono', monospace;
-	/* color: var(--primary);
-	background-color: var(--tertiary); */
+	font-family: var(--jetBrains);
 	font-weight: 400;
 	font-size: 14px;
 }

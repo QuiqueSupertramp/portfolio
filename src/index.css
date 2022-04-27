@@ -22,14 +22,14 @@ html {
 }
 
 body {
-	margin: 0;
-	font-family: var(--poppins);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 16px;
 	background-color: #1c1c1c;
-	color: var(--tertiary);
 	background-image: url(images/background.png);
+	color: var(--tertiary);
+	font-family: var(--poppins);
+	font-size: 16px;
+	margin: 0;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 main {

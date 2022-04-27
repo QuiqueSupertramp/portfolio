@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 
 export const Header = () => {
 	return (
-		<header className='header'>
+		<header className="header">
 			<Sidebar />
 			<AvatarMenu />
 		</header>

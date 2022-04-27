@@ -5,8 +5,8 @@ const CommentInput = ({ comment }) => {
 				'contact__comment',
 				comment.input.active ? 'input-active' : null,
 			].join(' ')}
-			rows='6'
-			placeholder='Mensaje...'
+			rows="6"
+			placeholder="Mensaje..."
 			value={comment.input.value}
 			onChange={comment.onChange}
 			onFocus={comment.onFocus}

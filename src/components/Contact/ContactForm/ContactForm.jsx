@@ -42,11 +42,11 @@ const ContactForm = () => {
 	};
 
 	return (
-		<form className='contact__form' onSubmit={onSubmit}>
+		<form className="contact__form" onSubmit={onSubmit}>
 			<Emailnput validation={formValidations.email} email={email} />
 			<CommentInput comment={comment} />
 			{submitError !== null && <ErrorSubmit submitError={submitError} />}
-			<input type='submit' className='btn btn--filled btn--s' value='Enviar' />
+			<input type="submit" className="btn btn--filled w100" value="Enviar" />
 		</form>
 	);
 };
