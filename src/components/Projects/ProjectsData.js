@@ -1,18 +1,19 @@
-const todoVueDesktop = 'images/projects/todoVue.png';
-const todoVueTablet = 'images/projects/todoVue-tb.png';
-const todoVueMobile = 'images/projects/todoVue-mb.png';
-
-const landingReactDesktop = 'images/projects/landing.png';
-const landingReactTablet = 'images/projects/landing-tb.png';
-const landingReactMobile = 'images/projects/landing-mb.png';
-
 const data = {
 	todoApp: {
 		title: 'Todo App',
 		images: [
-			{ img: todoVueDesktop, class: 'project__img project__img--desktop' },
-			{ img: todoVueTablet, class: 'project__img project__img--tablet' },
-			{ img: todoVueMobile, class: 'project__img project__img--mobile' },
+			{
+				img: 'images/projects/todoVue.png',
+				class: 'project__img project__img--desktop',
+			},
+			{
+				img: 'images/projects/todoVue-tb.png',
+				class: 'project__img project__img--tablet',
+			},
+			{
+				img: 'images/projects/todoVue-mb.png',
+				class: 'project__img project__img--mobile',
+			},
 		],
 		desc: 'Aplicación fullstack responsive con login de usuario. Frontend desarrollado con Vue 3 y Vue-Router. Backend con Node y Express. Base de datos MongoDB.',
 		links: {
@@ -24,9 +25,18 @@ const data = {
 	landingPage: {
 		title: 'Landing Page',
 		images: [
-			{ img: landingReactDesktop, class: 'project__img project__img--desktop' },
-			{ img: landingReactTablet, class: 'project__img project__img--tablet' },
-			{ img: landingReactMobile, class: 'project__img project__img--mobile' },
+			{
+				img: 'images/projects/landing.png',
+				class: 'project__img project__img--desktop',
+			},
+			{
+				img: 'images/projects/landing-tb.png',
+				class: 'project__img project__img--tablet',
+			},
+			{
+				img: 'images/projects/landing-mb.png',
+				class: 'project__img project__img--mobile',
+			},
 		],
 		desc: 'Página de producto multilenguaje y con gestión de opiniones (Context API). Frontend desarrollado con React y CSS modules',
 		links: {
