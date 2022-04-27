@@ -3,7 +3,7 @@ const CommentInput = ({ comment }) => {
 		<textarea
 			className={[
 				'contact__comment',
-				comment.input.active ? 'blur' : null,
+				comment.input.active ? 'input-active' : null,
 			].join(' ')}
 			rows='6'
 			placeholder='Mensaje...'

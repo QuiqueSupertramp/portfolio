@@ -5,7 +5,7 @@ const Emailnput = ({ validation, email }) => {
 				type='email'
 				className={[
 					'contact__emailInput',
-					email.input.active ? 'blur' : null,
+					email.input.active ? 'input-active' : null,
 				].join(' ')}
 				placeholder='Email...'
 				value={email.input.value}

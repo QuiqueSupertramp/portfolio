@@ -125,7 +125,11 @@
 .skills__img {
 	width: 15%;
 	max-width: 65px;
-	filter: drop-shadow(2px 4px 6px #000b);
+	/* filter: drop-shadow(2px 4px 6px #000b); */
+}
+
+.skills__img:hover {
+	filter: drop-shadow(2px 4px 6px #0008);
 }
 
 @media screen and (max-width: 948px) {

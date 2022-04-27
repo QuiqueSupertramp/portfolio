@@ -42,7 +42,7 @@
 	box-shadow: 2px 2px 10px #0004;
 }
 
-.blur {
+.input-active {
 	transition: background 0.3s;
 	border: 2px solid var(--tertiary);
 }
@@ -115,12 +115,14 @@
 }
 
 .contact__links {
+	margin-top: 0.5rem;
 	display: flex;
 	gap: 1.3rem;
 }
 
 .contact__links img {
 	width: 1.5rem;
+	display: block;
 }
 
 @media screen and (max-width: 1200px) {

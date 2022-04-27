@@ -3,22 +3,8 @@
 	margin: auto;
 }
 
-main {
-	padding: 0 var(--sidePadding);
-}
+/* -----------------   VARIABLES GLOBALES   ------------------- */
 
-section {
-	padding-bottom: 5rem;
-}
-
-p {
-	line-height: 1.5;
-	letter-spacing: 0.3px;
-}
-a {
-	text-decoration: none;
-	color: inherit;
-}
 .orange {
 	color: var(--secondary);
 }
@@ -26,6 +12,8 @@ a {
 .showOn {
 	animation: show-section 2s forwards;
 }
+
+/* BOTONES */
 
 .btn {
 	padding: 0.5em 2.5em;
@@ -43,6 +31,13 @@ a {
 	}
 }
 
+.btn--rounded {
+	border-radius: 50%;
+	padding: 14px;
+	background-color: var(--primary);
+	transition: all 0.25s ease-out;
+}
+
 .btn--filled {
 	background-color: var(--tertiary);
 	color: var(--primary);
@@ -55,7 +50,15 @@ a {
 	color: var(--tertiary);
 }
 
+/* ------------------- MEDIAS ----------------- */
+
 @media screen and (hover: hover) {
+	.btn--rounded:hover {
+		box-shadow: 0px 0px 20px #0004;
+		transform: scale(1.15);
+		transition: all 0.25s ease-out;
+	}
+
 	.btn--filled:hover,
 	.btn--ghost:hover {
 		box-shadow: 2px 2px 10px #0008;
@@ -63,6 +66,8 @@ a {
 		transition: all 0.25s ease-out;
 	}
 }
+
+/* ---------------- KEYFRAMES ------------------- */
 
 @keyframes fade-in {
 	0% {

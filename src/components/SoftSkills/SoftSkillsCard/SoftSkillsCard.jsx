@@ -2,7 +2,7 @@ const SoftSkillsCard = ({ softSkill }) => {
 	return (
 		<div className='softSkills__wrapper'>
 			<div className='softSkills__title'>
-				<img src={softSkill.img} alt='' />
+				<img src={softSkill.img} alt={softSkill.title} />
 				<h4>{softSkill.title}</h4>
 			</div>
 			<p>{softSkill.desc}</p>

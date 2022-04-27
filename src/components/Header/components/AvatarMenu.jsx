@@ -33,7 +33,7 @@ const AvatarMenu = () => {
 			</div>
 			<img
 				className='header__emoji'
-				src='images/bienvenidos.png'
+				src='images/avatar.png'
 				alt='Quique Supertramp Avatar'
 			/>
 		</div>

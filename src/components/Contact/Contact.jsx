@@ -35,18 +35,21 @@ const Contact = () => {
 							<div className='contact__links'>
 								<a
 									href='https://linkedin.com/in/quiquesupertramp'
+									className='btn--rounded'
 									target='_blank'
 									rel='noreferrer'>
 									<img src={linkedin} alt='linkedin' />
 								</a>
 								<a
 									href='https://github.com/QuiqueSupertramp'
+									className='btn--rounded'
 									target='_blank'
 									rel='noreferrer'>
 									<img src={github} alt='github' />
 								</a>
 								<a
 									href='https://instagram.com/quiquesupertramp'
+									className='btn--rounded'
 									target='_blank'
 									rel='noreferrer'>
 									<img src={instagram} alt='instagram' />

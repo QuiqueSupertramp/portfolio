@@ -1,6 +1,6 @@
 import useInput from '../../../hooks/useInput';
 import sendEmail from '../../../services/sendEmail';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Emailnput from './Emailnput';
 import CommentInput from './CommentInput';
 import ErrorSubmit from './ErrorSubmit';
@@ -11,20 +11,23 @@ const ContactForm = () => {
 	const comment = useInput();
 	const [submitError, setSubmitError] = useState(null);
 
+	useEffect(() => {
+		if (submitError === null) return;
+		const timeoutID = setTimeout(() => setSubmitError(null), 5000);
+		return () => clearTimeout(timeoutID);
+	}, [submitError]);
+
 	const emailSended = () => {
 		setSubmitError(false);
 		email.reset();
 		comment.reset();
 	};
 
-	const cleanErrorMessage = () => setTimeout(() => setSubmitError(null), 5000);
-
 	const onSubmit = e => {
 		e.preventDefault();
 
 		if (email.input.error || comment.input.value.length === 0) {
 			setSubmitError(true);
-			cleanErrorMessage();
 			return;
 		}
 
@@ -35,22 +38,15 @@ const ContactForm = () => {
 
 		sendEmail(data).then(res => {
 			res.ok === true ? emailSended() : setSubmitError(true);
-			cleanErrorMessage();
 		});
 	};
+
 	return (
 		<form className='contact__form' onSubmit={onSubmit}>
 			<Emailnput validation={formValidations.email} email={email} />
 			<CommentInput comment={comment} />
 			{submitError !== null && <ErrorSubmit submitError={submitError} />}
-			<div
-				className='g-recaptcha'
-				data-sitekey='6LeUn6EfAAAAAKIJPZ6etrL44ecGrBJWSu7RMW4R'></div>
-			<input
-				type='submit'
-				className='btn btn--filled contact__submitBtn'
-				value='Enviar'
-			/>
+			<input type='submit' className='btn btn--filled btn--s' value='Enviar' />
 		</form>
 	);
 };
