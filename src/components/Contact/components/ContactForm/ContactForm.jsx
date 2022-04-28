@@ -24,7 +24,11 @@ const ContactForm = () => {
 	const onSubmit = e => {
 		e.preventDefault();
 
-		if (email.input.error || comment.input.value.length === 0) {
+		if (
+			email.input.error ||
+			comment.input.value.length === 0 ||
+			comment.input.value.length === 0
+		) {
 			setSubmitError({
 				ok: true,
 				message: 'Revisa que el email sea correcto',
