@@ -1,6 +1,7 @@
 .header {
-	min-height: var(--headerHeight);
+	height: var(--headerHeight);
 	max-width: 1100px;
+	max-height: 1400px;
 	margin: 0 var(--sidePadding) 2rem;
 	position: relative;
 }

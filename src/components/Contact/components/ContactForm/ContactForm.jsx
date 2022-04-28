@@ -11,16 +11,12 @@ const ContactForm = () => {
 	const comment = useInput();
 	const [submitError, setSubmitError] = useState(null);
 
-	// Efecto para q el mensaje de éxito o error aparezca durante 5sg
-	useEffect(() => {
-		if (submitError === null) return;
-		const timeoutID = setTimeout(() => setSubmitError(null), 5000);
-		return () => clearTimeout(timeoutID);
-	}, [submitError]);
-
 	// Función para mail enviado correctamente
 	const emailSended = () => {
-		setSubmitError(false);
+		setSubmitError({
+			ok: false,
+			message: 'Mensaje enviado correctamente',
+		});
 		email.reset();
 		comment.reset();
 	};
@@ -29,7 +25,10 @@ const ContactForm = () => {
 		e.preventDefault();
 
 		if (email.input.error || comment.input.value.length === 0) {
-			setSubmitError(true);
+			setSubmitError({
+				ok: true,
+				message: 'Revisa que el email sea correcto',
+			});
 			return;
 		}
 
@@ -39,16 +38,32 @@ const ContactForm = () => {
 		};
 
 		sendEmail(data).then(res => {
-			res.ok === true ? emailSended() : setSubmitError(true);
+			res.ok === true
+				? emailSended()
+				: setSubmitError({
+						ok: true,
+						message: 'No se ha podido enviar',
+				  });
 		});
 	};
 
+	// Efecto para q el mensaje de éxito o error aparezca durante 5sg
+	useEffect(() => {
+		if (submitError === null) return;
+		const timeoutID = setTimeout(() => setSubmitError(null), 50000);
+		return () => clearTimeout(timeoutID);
+	}, [submitError]);
+
 	return (
 		<form className="contact__form" onSubmit={onSubmit}>
+			{submitError !== null && <ErrorSubmit submitError={submitError} />}
 			<Emailnput validation={formValidations.email} email={email} />
 			<CommentInput comment={comment} />
-			{submitError !== null && <ErrorSubmit submitError={submitError} />}
-			<input type="submit" className="btn btn--filled w100" value="Enviar" />
+			<input
+				type="submit"
+				className="btn btn--filled btn--submit w100"
+				value="Enviar"
+			/>
 		</form>
 	);
 };

@@ -1,11 +1,7 @@
 const ErrorSubmit = ({ submitError }) => {
-	return (
-		<span className="contact__error">
-			{submitError === false
-				? 'Mensaje enviado correctamente'
-				: 'No se ha podido enviar. Revisa que el email sea correcto'}
-		</span>
-	);
+	const styles =
+		submitError.ok === true ? 'contact__error' : 'contact__success';
+	return <span className={styles}>{submitError.message}</span>;
 };
 
 export default ErrorSubmit;

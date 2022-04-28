@@ -18,7 +18,7 @@ const SkillsViewMobile = ({ skill }) => {
 					alt="arrow down"
 				/>
 			</div>
-			<div className="skills__text skills__toggle" ref={toggle}>
+			<div className="skills__text skills__show" ref={toggle}>
 				<p className="skills__p">{data[skill].desc}</p>
 				<div className="skills__logos">
 					{data[skill].images.map(el => {

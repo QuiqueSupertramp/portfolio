@@ -58,12 +58,25 @@
 }
 
 .contact__error {
-	background-color: var(--secondary);
+	background-color: #ff000044;
+	color: var(--tertiary);
 	border-radius: 5px;
-	color: var(--primary);
 	padding: 0.5rem 1rem;
 	text-align: center;
 	width: 100%;
+}
+
+.contact__success {
+	background-color: var(--secondary-50);
+	color: var(--tertiary);
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	width: 100%;
+}
+
+.btn--submit {
+	margin-top: 0.5rem;
 }
 
 /* SIDEBAR */
