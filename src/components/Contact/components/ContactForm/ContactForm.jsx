@@ -50,7 +50,7 @@ const ContactForm = () => {
 	// Efecto para q el mensaje de éxito o error aparezca durante 5sg
 	useEffect(() => {
 		if (submitError === null) return;
-		const timeoutID = setTimeout(() => setSubmitError(null), 50000);
+		const timeoutID = setTimeout(() => setSubmitError(null), 5000);
 		return () => clearTimeout(timeoutID);
 	}, [submitError]);
 
