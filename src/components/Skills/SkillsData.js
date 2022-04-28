@@ -3,6 +3,7 @@ const css = 'images/skills/frontend/css.svg';
 const js = 'images/skills/frontend/js.svg';
 const react = 'images/skills/frontend/react.svg';
 const vue = 'images/skills/frontend/vue.svg';
+const tailwind = 'images/skills/frontend/tailwind.svg';
 const node = 'images/skills/backend/node.svg';
 const express = 'images/skills/backend/express.svg';
 const mongoDB = 'images/skills/backend/mongo.svg';
@@ -15,13 +16,14 @@ const scrum = 'images/skills/scrum/scrum.svg';
 const data = {
 	1: {
 		title: 'Frontend',
-		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, empecé con VUE y ahora me estoy especializando en REACT.',
+		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, empecé con VUE y ahora me estoy especializando en REACT. También he trabajado con librerias de css como TAILWIND.',
 		images: [
 			{ img: html, text: 'HTML' },
 			{ img: css, text: 'CSS' },
 			{ img: js, text: 'JavaScript' },
 			{ img: react, text: 'React' },
 			{ img: vue, text: 'Vue' },
+			{ img: tailwind, text: 'Tailwind' },
 		],
 	},
 	2: {

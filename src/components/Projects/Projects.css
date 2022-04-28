@@ -7,7 +7,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	justify-content: space-evenly;
+	gap: 4rem;
 }
 
 .project__card {

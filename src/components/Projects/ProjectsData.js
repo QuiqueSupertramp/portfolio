@@ -1,20 +1,64 @@
-const data = {
-	todoApp: {
+const data = [
+	{
+		title: 'Movies App',
+		images: {
+			desktop: {
+				img: 'images/projects/movie.png',
+				alt: 'Movies App Desktop',
+			},
+			tablet: {
+				img: 'images/projects/movie-tb.png',
+				alt: 'Movies App Tablet',
+			},
+			mobile: {
+				img: 'images/projects/movie-mb.png',
+				alt: 'Movies App Mobile',
+			},
+		},
+		desc: 'Buscador de peliculas con la API de TMBD, desarrollado con VITE, REACT, REACT-ROUTER y TAILWIND. Se ha reducido la carga incial de 10Mb a 885Kb usando la API de Intersection Observer y lazy loading.',
+		links: {
+			code: 'https://github.com/QuiqueSupertramp/movie-app',
+			web: 'https://quiquesupertramp.github.io/movie-app/',
+		},
+	},
+	{
+		title: 'Landing Page',
+		images: {
+			desktop: {
+				img: 'images/projects/landing.png',
+				alt: 'Landing Product Page Desktop',
+			},
+			tablet: {
+				img: 'images/projects/landing-tb.png',
+				alt: 'Landing Product Page Tablet',
+			},
+			mobile: {
+				img: 'images/projects/landing-mb.png',
+				alt: 'Landing Product Page Mobile',
+			},
+		},
+		desc: 'Página de producto multilenguaje y con gestión de opiniones (Context API). Frontend desarrollado con React y CSS modules',
+		links: {
+			code: 'https://github.com/QuiqueSupertramp/landing-product-page-react',
+			web: 'https://quiquesupertramp.github.io/landing-product-page-react/',
+		},
+	},
+	{
 		title: 'Todo App',
-		images: [
-			{
+		images: {
+			desktop: {
 				img: 'images/projects/todoVue.png',
-				class: 'project__img project__img--desktop',
+				alt: 'Todo App Desktop',
 			},
-			{
+			tablet: {
 				img: 'images/projects/todoVue-tb.png',
-				class: 'project__img project__img--tablet',
+				alt: 'Todo App Tablet',
 			},
-			{
+			mobile: {
 				img: 'images/projects/todoVue-mb.png',
-				class: 'project__img project__img--mobile',
+				alt: 'Todo App Mobile',
 			},
-		],
+		},
 		desc: 'Aplicación fullstack responsive con login de usuario. Frontend desarrollado con Vue 3 y Vue-Router. Backend con Node y Express. Base de datos MongoDB.',
 		links: {
 			code: 'https://github.com/QuiqueSupertramp/todoList-Vue3',
@@ -22,28 +66,6 @@ const data = {
 			web: 'https://todolistvue3.netlify.app/',
 		},
 	},
-	landingPage: {
-		title: 'Landing Page',
-		images: [
-			{
-				img: 'images/projects/landing.png',
-				class: 'project__img project__img--desktop',
-			},
-			{
-				img: 'images/projects/landing-tb.png',
-				class: 'project__img project__img--tablet',
-			},
-			{
-				img: 'images/projects/landing-mb.png',
-				class: 'project__img project__img--mobile',
-			},
-		],
-		desc: 'Página de producto multilenguaje y con gestión de opiniones (Context API). Frontend desarrollado con React y CSS modules',
-		links: {
-			code: 'https://github.com/QuiqueSupertramp/landing-product-page-react',
-			web: 'https://quiquesupertramp.github.io/landing-product-page-react/',
-		},
-	},
-};
+];
 
 export default data;
