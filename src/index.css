@@ -8,6 +8,7 @@
 	--secondary: #fd7014;
 	--secondary-50: #fd701444;
 	--tertiary: #9ca3af;
+	--tertiary-2: #babfc7;
 
 	--poppins: 'Poppins', sans-serif;
 	--jetBrains: 'JetBrains Mono', monospace;
@@ -30,7 +31,7 @@ body {
 	background-repeat: repeat;
 	color: var(--tertiary);
 	font-family: var(--poppins);
-	font-size: 16px;
+	font-size: 1rem;
 	margin: 0;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
