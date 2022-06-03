@@ -15,7 +15,7 @@ const Sidebar = () => {
 				</a>
 				<a
 					download="CV Enrique López"
-					href="resources/QuiqueLopezCV.pdf"
+					href="QuiqueLopezCV.pdf"
 					className="btn btn--ghost">
 					Download CV
 				</a>
