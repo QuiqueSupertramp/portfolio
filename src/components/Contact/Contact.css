@@ -44,8 +44,8 @@
 	width: 100%;
 }
 
-.input-active {
-	transition: background 0.3s;
+.contact__emailInput:focus,
+.contact__comment:focus {
 	border: 2px solid var(--tertiary);
 }
 

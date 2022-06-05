@@ -1,3 +1,4 @@
+import LinkButton from '../../Buttons/Button';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -10,15 +11,13 @@ const Sidebar = () => {
 				<span className="orange">{'/>'}</span>
 			</h2>
 			<div className="header__buttons">
-				<a href="#about" className="btn btn--filled">
-					About Me
-				</a>
-				<a
+				<LinkButton href="#about">About me</LinkButton>
+				<LinkButton
+					filled={false}
 					download="CV Enrique López"
-					href="QuiqueLopezCV.pdf"
-					className="btn btn--ghost">
+					href="QuiqueLopezCV.pdf">
 					Download CV
-				</a>
+				</LinkButton>
 			</div>
 		</div>
 	);

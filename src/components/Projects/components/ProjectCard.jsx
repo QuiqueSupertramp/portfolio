@@ -1,3 +1,5 @@
+import LinkButton from '../../Buttons/Button';
+
 const ProjectCard = ({ project }) => {
 	return (
 		<div className="project__card">
@@ -21,28 +23,20 @@ const ProjectCard = ({ project }) => {
 			<h3 className="project__h3">{project.title}</h3>
 			<p className="project__description">{project.desc}</p>
 			<div className="project__links">
-				<a
-					href={project.links.web}
-					target="_blank"
-					rel="noreferrer"
-					className="btn btn--filled">
+				<LinkButton href={project.links.web} target="_blank" rel="noreferrer">
 					Web
-				</a>
-				<a
-					href={project.links.code}
-					target="_blank"
-					rel="noreferrer"
-					className="btn btn--filled">
+				</LinkButton>
+				<LinkButton href={project.links.code} target="_blank" rel="noreferrer">
 					{project.links.code2 ? 'Frontend Code' : 'Code'}
-				</a>
+				</LinkButton>
+
 				{project.links.code2 && (
-					<a
+					<LinkButton
 						href={project.links.code2}
 						target="_blank"
-						rel="noreferrer"
-						className="btn btn--filled">
+						rel="noreferrer">
 						Backend Code
-					</a>
+					</LinkButton>
 				)}
 			</div>
 		</div>

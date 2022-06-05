@@ -29,3 +29,14 @@
 	height: 1px;
 	background-color: var(--tertiary);
 }
+
+@media screen and (max-width: 500px) {
+	.title span {
+		font-size: 1.3rem;
+	}
+
+	.title h2 {
+		font-size: 1.5rem;
+		margin: 0 1.5rem 0 0.5rem;
+	}
+}

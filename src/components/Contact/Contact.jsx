@@ -1,8 +1,8 @@
 import './Contact.css';
 
 import Title from '../Title/Title';
-import ContactSidebar from './components/ContactSidebar/ContactSidebar';
-import ContactForm from './components/ContactForm/ContactForm';
+import ContactSidebar from './ContactSidebar';
+import ContactForm from './ContactForm';
 
 import useObserver from '../../hooks/useObserver';
 
