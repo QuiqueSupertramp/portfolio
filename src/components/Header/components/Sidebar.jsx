@@ -1,4 +1,4 @@
-import LinkButton from '../../Buttons/Button';
+import LinkButton from '../../Buttons/LinkButton';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -11,9 +11,12 @@ const Sidebar = () => {
 				<span className="orange">{'/>'}</span>
 			</h2>
 			<div className="header__buttons">
-				<LinkButton href="#about">About me</LinkButton>
+				<LinkButton href="#about" fullWidth={false}>
+					About me
+				</LinkButton>
 				<LinkButton
 					filled={false}
+					fullWidth={false}
 					download="CV Enrique López"
 					href="QuiqueLopezCV.pdf">
 					Download CV

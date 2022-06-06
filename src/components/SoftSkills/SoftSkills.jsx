@@ -1,8 +1,8 @@
 import './SoftSkills.css';
 import Title from '../Title/Title';
-import SoftSkillsCard from './components/SoftSkillsCard';
 import data from './SoftSkillsData';
 import useObserver from '../../hooks/useObserver';
+import SoftSkillsCard from './SoftSkillsCard';
 
 const SoftSkills = () => {
 	const { ref: softSkillsRef } = useObserver();

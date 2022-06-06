@@ -1,6 +1,6 @@
-import data from '../../SkillsData.js';
+import data from '../SkillsData';
 
-const SkillsView = ({ skill }) => {
+const SkillsCardDesktop = ({ skill }) => {
 	return (
 		<article className="skills__main">
 			<h3 className="skills__h3">{data[skill].title}</h3>
@@ -22,4 +22,4 @@ const SkillsView = ({ skill }) => {
 	);
 };
 
-export default SkillsView;
+export default SkillsCardDesktop;

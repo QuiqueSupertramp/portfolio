@@ -91,14 +91,14 @@
 	animation: fade-in 1.5s forwards;
 }
 
-.skills__reverse {
-	transform: scale(1, -1);
-	transition: all 0.3s;
-}
-
 .skills__h3 {
 	color: var(--secondary);
 	text-transform: uppercase;
+}
+
+.skills__arrow {
+	color: var(--secondary);
+	width: 1.2rem;
 }
 
 .skills__text {
@@ -107,10 +107,6 @@
 	gap: 2rem;
 	opacity: 0;
 	animation: fade-in 1s forwards;
-}
-
-.skills__show {
-	display: none;
 }
 
 .skills__logos {

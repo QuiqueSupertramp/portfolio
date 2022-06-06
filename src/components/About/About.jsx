@@ -1,8 +1,8 @@
-import Title from '../Title/Title';
 import './About.css';
-import Sidebar from './components/Sidebar';
-import Presentation from './components/Presentation';
 import useObserver from '../../hooks/useObserver';
+import Title from '../Title/Title';
+import Sidebar from './Sidebar';
+import Presentation from './Presentation';
 
 const About = () => {
 	const { ref: aboutRef } = useObserver();

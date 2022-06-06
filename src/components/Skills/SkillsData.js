@@ -16,7 +16,7 @@ const scrum = 'images/skills/scrum/scrum.svg';
 const data = {
 	1: {
 		title: 'Frontend',
-		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, empecé con VUE y ahora me estoy especializando en REACT. También he trabajado con librerias de css como TAILWIND.',
+		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, estoy especializado en REACT pero también he tocado VUE. También he trabajado con librerias de css como TAILWIND.',
 		images: [
 			{ img: html, text: 'HTML' },
 			{ img: css, text: 'CSS' },

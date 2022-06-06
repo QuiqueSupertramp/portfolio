@@ -1,4 +1,4 @@
-import LinkButton from '../../Buttons/Button';
+import LinkButton from '../Buttons/LinkButton';
 
 const ProjectCard = ({ project }) => {
 	return (
@@ -24,12 +24,16 @@ const ProjectCard = ({ project }) => {
 			<p className="project__description">{project.desc}</p>
 			<div className="project__links">
 				<LinkButton
+					fullWidth={false}
+					smallText={true}
 					href={project.links.web}
 					target="_blank"
 					rel="noopener noreferrer">
 					Web
 				</LinkButton>
 				<LinkButton
+					fullWidth={false}
+					smallText={true}
 					href={project.links.code}
 					target="_blank"
 					rel="noopener noreferrer">
@@ -38,6 +42,8 @@ const ProjectCard = ({ project }) => {
 
 				{project.links.code2 && (
 					<LinkButton
+						fullWidth={false}
+						smallText={true}
 						href={project.links.code2}
 						target="_blank"
 						rel="noopener noreferrer">

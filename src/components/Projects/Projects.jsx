@@ -1,8 +1,8 @@
 import './Projects.css';
 import useObserver from '../../hooks/useObserver';
 import Title from '../Title/Title';
-import ProjectCard from './components/ProjectCard';
 import projectsData from './ProjectsData';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
 	const { ref: projectsRef } = useObserver();

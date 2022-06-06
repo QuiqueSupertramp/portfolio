@@ -1,4 +1,4 @@
-import LinkButton from '../../Buttons/Button';
+import LinkButton from '../Buttons/LinkButton';
 
 const Sidebar = () => {
 	return (
