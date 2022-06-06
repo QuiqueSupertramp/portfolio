@@ -1,4 +1,3 @@
-import './App.css';
 import { Header } from './components/Header/Header';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
@@ -8,7 +7,7 @@ import SoftSkills from './components/SoftSkills/SoftSkills';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className="App">
 			<Header />
 			<main>
 				<About />

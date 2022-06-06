@@ -1,3 +1,5 @@
+@import './Global.css';
+
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -59,8 +61,8 @@ button {
 }
 
 button:disabled {
-	cursor: default;
-	opacity: 0.5;
+	opacity: 0.3;
+	cursor: not-allowed;
 }
 
 /* ----------------------- MEDIAS ------------------------- */
@@ -105,4 +107,9 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--thumbBG);
 	border-radius: 6px;
 	border: 3px solid var(--scrollbarBG);
+}
+
+.App {
+	max-width: 1400px;
+	margin: auto;
 }

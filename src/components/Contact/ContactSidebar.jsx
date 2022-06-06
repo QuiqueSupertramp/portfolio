@@ -21,7 +21,7 @@ const ContactSidebar = () => {
 						href="https://linkedin.com/in/quiquesupertramp"
 						className="btn--rounded"
 						target="_blank"
-						rel="noreferrer">
+						rel="noopener noreferrer">
 						<img
 							src="images/social/linkedin.svg"
 							alt="linkedin"
@@ -32,14 +32,14 @@ const ContactSidebar = () => {
 						href="https://github.com/QuiqueSupertramp"
 						className="btn--rounded"
 						target="_blank"
-						rel="noreferrer">
+						rel="noopener noreferrer">
 						<img src="images/social/github.svg" alt="github" title="GitHub" />
 					</a>
 					<a
 						href="https://instagram.com/quiquesupertramp"
 						className="btn--rounded"
 						target="_blank"
-						rel="noreferrer">
+						rel="noopener noreferrer">
 						<img
 							src="images/social/instagram.svg"
 							alt="instagram"

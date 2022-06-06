@@ -23,10 +23,16 @@ const ProjectCard = ({ project }) => {
 			<h3 className="project__h3">{project.title}</h3>
 			<p className="project__description">{project.desc}</p>
 			<div className="project__links">
-				<LinkButton href={project.links.web} target="_blank" rel="noreferrer">
+				<LinkButton
+					href={project.links.web}
+					target="_blank"
+					rel="noopener noreferrer">
 					Web
 				</LinkButton>
-				<LinkButton href={project.links.code} target="_blank" rel="noreferrer">
+				<LinkButton
+					href={project.links.code}
+					target="_blank"
+					rel="noopener noreferrer">
 					{project.links.code2 ? 'Frontend Code' : 'Code'}
 				</LinkButton>
 
@@ -34,7 +40,7 @@ const ProjectCard = ({ project }) => {
 					<LinkButton
 						href={project.links.code2}
 						target="_blank"
-						rel="noreferrer">
+						rel="noopener noreferrer">
 						Backend Code
 					</LinkButton>
 				)}
