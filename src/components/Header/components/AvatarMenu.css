@@ -1,4 +1,4 @@
-.avatarMenu {
+.header__avatarMenu {
 	align-items: center;
 	bottom: 0;
 	display: flex;
@@ -26,7 +26,7 @@
 	right: 25%;
 }
 
-.socials {
+.header__socials {
 	align-items: center;
 	background-color: transparent;
 	border-radius: 50%;
@@ -37,7 +37,7 @@
 	top: 0;
 	width: 100%;
 }
-.social {
+.header__social {
 	border-radius: 50%;
 	cursor: pointer;
 	height: 7%;
@@ -48,40 +48,40 @@
 	z-index: 99;
 }
 
-.social img {
+.header__social img {
 	cursor: pointer;
 	transition: all 0.2s;
 	width: 100%;
 }
 
-.social1 {
+.header__social1 {
 	transform: rotate(calc(30deg));
 }
-.social1 img {
+.header__social1 img {
 	transform: rotate(calc(-30deg));
 	transition: all 0.2s;
 }
 
-.social2 {
+.header__social2 {
 	transform: rotate(calc(60deg));
 }
-.social2 img {
+.header__social2 img {
 	transform: rotate(calc(-60deg));
 }
 
 /* MEDIAS */
 
 @media screen and (hover: hover) {
-	.social img:hover {
+	.header__social img:hover {
 		transform: scale(1.4);
 	}
 
-	.social1 img:hover {
+	.header__social1 img:hover {
 		transform: scale(1.4) rotate(-30deg);
 		transition: all 0.2s;
 	}
 
-	.social2 img:hover {
+	.header__social2 img:hover {
 		transform: scale(1.4) rotate(-60deg);
 		transition: all 0.2s;
 	}

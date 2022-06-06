@@ -48,7 +48,7 @@
 	transition: background 0.5s;
 }
 
-.active {
+.skills__active {
 	background-color: var(--secondary-50) !important;
 	transition: background 0.5s;
 }

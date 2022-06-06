@@ -2,26 +2,26 @@ import './AvatarMenu.css';
 
 const AvatarMenu = () => {
 	return (
-		<div className="avatarMenu">
+		<div className="header__avatarMenu">
 			<div className="header__circle"></div>
-			<div className="socials">
+			<div className="header__socials">
 				<a
 					href="https://github.com/QuiqueSupertramp"
-					className="social"
+					className="header__social"
 					target="_blank"
 					rel="noopener noreferrer">
 					<img src="images/social/github.svg" alt="github" />
 				</a>
 				<a
 					href="https://linkedin.com/in/quiquesupertramp"
-					className="social social1"
+					className="header__social header__social1"
 					target="_blank"
 					rel="noopener noreferrer">
 					<img src="images/social/linkedin.svg" alt="linkedin" />
 				</a>
 				<a
 					href="https://instagram.com/quiquesupertramp"
-					className="social social2"
+					className="header__social header__social2"
 					target="_blank"
 					rel="noopener noreferrer">
 					<img src="images/social/instagram.svg" alt="instagram" />

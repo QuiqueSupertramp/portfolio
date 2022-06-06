@@ -15,36 +15,36 @@ const MenuDesktop = ({ view, setView }) => {
 	}, [view]);
 
 	return (
-		<nav className='skills__menu'>
+		<nav className="skills__menu">
 			<ul>
-				<div className='skills__bar' ref={bar}></div>
+				<div className="skills__bar" ref={bar}></div>
 				<li>
 					<button
-						data-view='1'
+						data-view="1"
 						onClick={handleView}
-						className={view === 1 ? 'active' : null}>
+						className={view === 1 ? 'skills__active' : null}>
 						Frontend
 					</button>
 				</li>
 				<li>
 					<button
-						data-view='2'
+						data-view="2"
 						onClick={handleView}
-						className={view === 2 ? 'active' : null}>
+						className={view === 2 ? 'skills__active' : null}>
 						Backend
 					</button>
 				</li>
 				<li>
 					<button
-						data-view='3'
+						data-view="3"
 						onClick={handleView}
-						className={view === 3 ? 'active' : null}>
+						className={view === 3 ? 'skills__active' : null}>
 						Tools
 					</button>
 				</li>
 				<li>
 					<button
-						data-view='4'
+						data-view="4"
 						onClick={handleView}
 						className={view === 4 ? 'active' : null}>
 						Methodologies

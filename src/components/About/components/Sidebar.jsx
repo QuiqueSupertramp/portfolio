@@ -3,7 +3,7 @@ import LinkButton from '../../Buttons/Button';
 const Sidebar = () => {
 	return (
 		<div className="about__sidebar">
-			<div className="photo">
+			<div className="about__photo">
 				<img src="images/quiquePerfil.png" alt="foto portfolio" />
 			</div>
 			<div className="about__links">
