@@ -181,6 +181,9 @@
 }
 
 @media screen and (min-width: 769px) {
+	.skills {
+		min-height: 70vh;
+	}
 	.skills__container--mobile {
 		display: none;
 	}

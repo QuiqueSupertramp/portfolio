@@ -1,7 +1,7 @@
-import sendEmail from '../../services/sendEmail';
 import { useState, useEffect } from 'react';
 import ErrorSubmit from './ErrorSubmit';
 import useContactForm from '../../hooks/useContactForm';
+import sendEmail from '../../lib/services/sendEmail';
 
 const ContactForm = () => {
 	const [submitError, setSubmitError] = useState(null);

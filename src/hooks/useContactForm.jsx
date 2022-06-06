@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import formValidations from '../lib/formValidations';
+import formValidations from '../lib/Validations/formValidations';
 
 const COMMENT_MIN_LENGTH = 10;
 const initialForm = {
