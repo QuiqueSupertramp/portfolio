@@ -2,10 +2,10 @@
 
 <h1 align="left">Portfolio</h1>
 
-<h3>Contenido:</h3>
+<h3>✨ Contenido:</h3>
 <p>Aquí encontratrás toda la información sobre mis habilidades, proyectos, experiencia y redes sociales.</p>
 
-<h3>Aprendizaje:</h3>
+<h3>🌱 Aprendizaje:</h3>
 <p>Desarrollar mi portfolio después de un tiempo de estudiado me ha ayudado a afianzar varias skills:</p>
 
   - **VITE**: He aprendido a usar y configurar este compilador.
@@ -13,5 +13,5 @@
   - **ESLINT y PRETTIER**: He aprendido a configurarlos.
   - **CLEAN CODE**: Aunque es un proyecto sencillo, me ha servido para pulir buenas prácticas.
 
-<h3>Web:</h3>
+<h3>⚡ Web:</h3>
 <p>Puedes verlo en: <a href="https://quiquesupertramp.github.io/portfolio/" target="_blank" rel="noopener noreferrer"> https://quiquesupertramp.github.io/portfolio/</a></p>
