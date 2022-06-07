@@ -6,11 +6,12 @@
 <p>Aquí encontratrás toda la información sobre mis habilidades, proyectos, experiencia y redes sociales.</p>
 
 <h3>🌱 Aprendizaje:</h3>
-<p>Desarrollar mi portfolio después de un tiempo de estudiado me ha ayudado a afianzar varias skills:</p>
+<p>Desarrollar mi portfolio después de un tiempo de estudiando me ha ayudado a afianzar varias skills:</p>
 
   - **VITE**: He aprendido a usar y configurar este compilador.
   - **BEM**: Es la primera vez que utilizo esta metodología para CSS.
   - **ESLINT y PRETTIER**: He aprendido a configurarlos.
+  - **UX/UI**: He adquirido conciencia de la importancia que tienen.
   - **CLEAN CODE**: Aunque es un proyecto sencillo, me ha servido para pulir buenas prácticas.
 
 <h3>⚡ Web:</h3>
