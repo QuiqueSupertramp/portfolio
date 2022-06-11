@@ -1,5 +1,27 @@
 const data = [
 	{
+		title: 'Portfolio',
+		images: {
+			desktop: {
+				img: 'images/projects/portfolio.png',
+				alt: 'Portfolio Desktop',
+			},
+			tablet: {
+				img: 'images/projects/portfolio-tb.png',
+				alt: 'Portfolio Tablet',
+			},
+			mobile: {
+				img: 'images/projects/portfolio-mb.png',
+				alt: 'Portfolio Mobile',
+			},
+		},
+		desc: 'Este portfolio ha sido desarrollado con Vite, React y CSS vanilla con metodología BEM. He usado la API de Intersection Observer a través de un Custom Hook para los efectos.',
+		links: {
+			code: 'https://github.com/QuiqueSupertramp/portfolio',
+			web: 'https://quiquesupertramp.github.io/portfolio/',
+		},
+	},
+	{
 		title: 'Movies App',
 		images: {
 			desktop: {
@@ -64,28 +86,6 @@ const data = [
 			code: 'https://github.com/QuiqueSupertramp/todoList-Vue3',
 			code2: 'https://github.com/QuiqueSupertramp/API-todoList-Node',
 			web: 'https://todolistvue3.netlify.app/',
-		},
-	},
-	{
-		title: 'Portfolio',
-		images: {
-			desktop: {
-				img: 'images/projects/portfolio.png',
-				alt: 'Portfolio Desktop',
-			},
-			tablet: {
-				img: 'images/projects/portfolio-tb.png',
-				alt: 'Portfolio Tablet',
-			},
-			mobile: {
-				img: 'images/projects/portfolio-mb.png',
-				alt: 'Portfolio Mobile',
-			},
-		},
-		desc: 'Este portfolio ha sido desarrollado con Vite, React y CSS vanilla con metodología BEM. He usado la API de Intersection Observer a través de un Custom Hook para los efectos.',
-		links: {
-			code: 'https://github.com/QuiqueSupertramp/portfolio',
-			web: 'https://quiquesupertramp.github.io/portfolio/',
 		},
 	},
 ];
