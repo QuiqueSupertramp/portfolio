@@ -16,7 +16,7 @@ const scrum = 'images/skills/scrum/scrum.svg';
 const data = {
 	1: {
 		title: 'Frontend',
-		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, estoy especializado en REACT pero también he tocado VUE. También he trabajado con librerias de css como TAILWIND.',
+		desc: 'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, estoy especializado en REACT pero también he trabajado con VUE. Para el css he utilizado librerías como TAILWIND.',
 		images: [
 			{ img: html, text: 'HTML' },
 			{ img: css, text: 'CSS' },
@@ -28,7 +28,7 @@ const data = {
 	},
 	2: {
 		title: 'Backend',
-		desc: 'Imprescindible poder crear un crud con NODE y EXPRESS. En cuanto a bases de datos, por ahora he trabajado sólo con MONGODB. Sin duda es un área en la que también me gustaría seguir formándome.',
+		desc: 'He desarrollado CRUDs con NODE y EXPRESS, sencillos pero buscando buenas prácticas. En cuanto a bases de datos, por ahora he trabajado con MONGODB. Sin duda es un área en la que también me gustaría seguir formándome.',
 		images: [
 			{ img: node, text: 'NodeJS' },
 			{ img: express, text: 'Express' },
@@ -47,7 +47,7 @@ const data = {
 	},
 	4: {
 		title: 'Methodologies',
-		desc: 'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos que me resultan familiares. SCRUM, por ejemplo, es una metodología que viene del rugby.',
+		desc: 'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos, responsabilidades y tareas que me resultan familiares. SCRUM, por ejemplo, es una metodología que viene del rugby. Ahora tengo el foco en los conceptos CLEAN CODE y SOLID',
 		images: [{ img: scrum, text: 'Scrum' }],
 	},
 };

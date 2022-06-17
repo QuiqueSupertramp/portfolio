@@ -10,7 +10,7 @@ const Projects = () => {
 	return (
 		<section id="projects">
 			<div className="projects" ref={projectsRef}>
-				<Title text="Projects" number="4" />
+				<Title text="Proyectos" number="4" />
 				<div className="projects__main">
 					{projectsData.map(project => (
 						<ProjectCard key={project.title} project={project} />

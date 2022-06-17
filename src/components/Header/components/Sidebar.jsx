@@ -12,14 +12,14 @@ const Sidebar = () => {
 			</h2>
 			<div className="header__buttons">
 				<LinkButton href="#about" fullWidth={false}>
-					About me
+					Conóceme
 				</LinkButton>
 				<LinkButton
 					filled={false}
 					fullWidth={false}
 					download="CV Enrique López"
 					href="QuiqueLopezCV.pdf">
-					Download CV
+					Descargar CV
 				</LinkButton>
 			</div>
 		</div>

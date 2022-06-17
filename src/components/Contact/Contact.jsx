@@ -12,7 +12,7 @@ const Contact = () => {
 	return (
 		<section id="contact">
 			<div className="contact" ref={contactRef}>
-				<Title text="Say Hello!" number="5" />
+				<Title text="Contacto" number="5" />
 				<div className="contact__container">
 					<ContactSidebar />
 					<ContactForm />
